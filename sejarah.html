@@ -81,7 +81,7 @@
 </head>
 <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
-<nav class="relative bg-green-800/50 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
+<nav class="relative bg-green-800 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
   <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div class="relative flex h-16 items-center justify-between">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -104,8 +104,8 @@
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
             <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-            <a href="#" aria-current="page" class="rounded-md bg-gray-950/50 px-3 py-2 text-sm font-medium text-white">Dashboard</a>
-            <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Team</a>
+            <a href="index.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Beranda</a>
+            <a href="#" aria-current="page" class="rounded-md bg-gray-950/50  px-3 py-2 text-sm font-medium text-white">Sejarah jamu</a>
             <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Projects</a>
             <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Calendar</a>
           </div>
@@ -114,18 +114,13 @@
       <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
         <button type="button" class="relative rounded-full p-1 text-gray-400 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
           <span class="absolute -inset-1.5"></span>
-          <span class="sr-only">View notifications</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
-            <path d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
         </button>
 
         <!-- Profile dropdown -->
         <el-dropdown class="relative ml-3">
           <button class="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
             <span class="absolute -inset-1.5"></span>
-            <span class="sr-only">Open user menu</span>
-            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="size-8 rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10" />
+    
           </button>
 
           <el-menu anchor="bottom end" popover class="w-48 origin-top-right rounded-md bg-gray-800 py-1 outline -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
@@ -141,10 +136,10 @@
   <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
     <div class="space-y-1 px-2 pt-2 pb-3">
       <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-      <a href="#" aria-current="page" class="block rounded-md bg-gray-950/50 px-3 py-2 text-base font-medium text-white">Dashboard</a>
-      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Team</a>
-      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Projects</a>
-      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Calendar</a>
+            <a href="index.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Beranda</a>
+            <a href="#" aria-current="page" class="rounded-md bg-gray-950/50  px-3 py-2 text-sm font-medium text-white">Sejarah jamu</a>
+            <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Projects</a>
+            <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Calendar</a>
     </div>
   </el-disclosure>
 </nav>
@@ -168,8 +163,10 @@
     <!-- Introduction Section -->
     <section class="py-16 jamu-pattern">
         <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto text-center fade-in">
-                <h2 class="font-serif text-3xl md:text-4xl font-bold text-green-800 mb-8">Warisan Leluhur yang Tak Lekang Waktu</h2>
+                <div class="max-w-4xl mx-auto text-center fade-in">
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-green-800 mb-8">
+                        Warisan Leluhur yang Tak Lekang Waktu
+                    </h2>
                 <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-8 md:p-12">
                     <p class="text-lg md:text-xl leading-relaxed text-gray-700 mb-6">
                         Jamu, sebagai warisan budaya Indonesia yang telah berusia ribuan tahun, merupakan sistem pengobatan tradisional yang menggunakan bahan-bahan alami dari alam Nusantara. Dari daun-daunan, akar-akaran, hingga rempah-rempah, jamu telah menjadi bagian tak terpisahkan dari kehidupan masyarakat Indonesia.
@@ -179,114 +176,207 @@
                     </p>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Timeline Section -->
-    <section class="py-20 bg-gradient-to-b from-green-50 to-yellow-50">
+<section class="py-20 bg-gradient-to-b from-green-50 to-yellow-50">
         <div class="container mx-auto px-6">
-            <h2 class="font-serif text-3xl md:text-4xl font-bold text-center text-green-800 mb-16">Timeline Sejarah Jamu</h2>
-            
-            <div class="relative timeline-line max-w-6xl mx-auto">
-                
-                <!-- Era Prasejarah -->
-                <div class="timeline-item relative mb-20 fade-in">
-                    <div class="timeline-dot top-8"></div>
-                    <div class="timeline-content w-full md:w-5/12 bg-white rounded-2xl shadow-xl p-8">
-                        <div class="bg-green-100 text-green-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
-                            Prasejarah - 2000 SM
-                        </div>
-                        <h3 class="font-serif text-2xl font-bold text-green-800 mb-4">Awal Mula Pengobatan Herbal</h3>
-                        <p class="text-gray-700 leading-relaxed">
-                            Masyarakat Austronesia yang mendiami Nusantara mulai menggunakan tumbuhan obat untuk pengobatan. Pengetahuan ini diturunkan secara lisan dari generasi ke generasi, menciptakan fondasi awal sistem pengobatan tradisional yang akan berkembang menjadi jamu.
-                        </p>
-                    </div>
-                </div>
+            <h2 class="font-serif text-3xl md:text-4xl font-bold text-center text-green-800 mb-16">
+                Timeline Sejarah Jamu
+            </h2>
+        <div class="relative timeline-line max-w-6xl mx-auto">
+  
+        <!-- Timeline Item -->
+        <div class="relative mb-20 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Timeline dot -->
+            <div class="absolute left-1/2 -translate-x-1/2 top-1 z-10">
+            <div class="w-4 h-4 bg-green-600 rounded-full border-4 border-white shadow"></div>
+        </div>
 
-                <!-- Era Kerajaan Hindu-Buddha -->
-                <div class="timeline-item relative mb-20 fade-in">
-                    <div class="timeline-dot top-8"></div>
-                    <div class="timeline-content w-full md:w-5/12 bg-white rounded-2xl shadow-xl p-8">
-                        <div class="bg-yellow-100 text-yellow-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
-                            400 - 1500 M
-                        </div>
-                        <h3 class="font-serif text-2xl font-bold text-green-800 mb-4">Pengaruh Ayurveda & Pengobatan Tiongkok</h3>
-                        <p class="text-gray-700 leading-relaxed mb-4">
-                            Masuknya agama Hindu-Buddha membawa pengaruh sistem pengobatan Ayurveda dari India. Kontak perdagangan dengan Tiongkok juga memperkenalkan konsep pengobatan tradisional Tiongkok. Perpaduan ini memperkaya khazanah pengobatan tradisional Nusantara.
-                        </p>
-                        <p class="text-sm text-gray-600 italic">
-                            Di era ini, kerajaan-kerajaan seperti Majapahit dan Sriwijaya mulai mendokumentasikan resep-resep jamu dalam lontar dan prasasti.
-                        </p>
-                    </div>
-                </div>
+            <!-- Konten -->
+        <div class="timeline-content bg-white rounded-2xl shadow-xl p-8 fade-in">
+            <div class="bg-green-100 text-green-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
+                Prasejarah - 2000 SM
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-green-800 mb-4">Awal Mula Pengobatan Herbal</h3>
+            <p class="text-gray-700 leading-relaxed">
+                Masyarakat Austronesia yang mendiami Nusantara mulai menggunakan tumbuhan obat untuk
+                pengobatan. Pengetahuan ini diturunkan secara lisan dari generasi ke generasi, menciptakan
+                fondasi awal sistem pengobatan tradisional yang akan berkembang menjadi jamu.
+            </p>
+        </div>
 
-                <!-- Era Kerajaan Mataram -->
-                <div class="timeline-item relative mb-20 fade-in">
-                    <div class="timeline-dot top-8"></div>
-                    <div class="timeline-content w-full md:w-5/12 bg-white rounded-2xl shadow-xl p-8">
-                        <div class="bg-orange-100 text-orange-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
-                            1500 - 1800 M
-                        </div>
-                        <h3 class="font-serif text-2xl font-bold text-green-800 mb-4">Perkembangan di Keraton Jawa</h3>
-                        <p class="text-gray-700 leading-relaxed mb-4">
-                            Keraton-keraton Jawa, terutama Mataram, Yogyakarta, dan Surakarta, mengembangkan sistem jamu yang lebih sistematis. Para tabib keraton menciptakan ramuan-ramuan khusus untuk keluarga kerajaan dan mengembangkan literatur pengobatan tradisional.
-                        </p>
-                        <div class="bg-green-50 p-4 rounded-lg">
+        <!-- Gambar -->
+        <div class="flex justify-center fade-in">
+        <img src="/foto/prasejarah.jpg"
+            alt="Ilustrasi masyarakat Austronesia menggunakan tumbuhan obat pada masa prasejarah"
+            loading="lazy"
+            class="rounded-2xl shadow-xl w-full max-w-md h-64 md:h-80 object-cover">
+        </div>
+    </div>
+
+
+<!-- baru -->
+<div class="relative timeline-line max-w-6xl mx-auto">
+  
+        <!-- Timeline Item -->
+        <div class="relative mb-20 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Timeline dot -->
+            <div class="absolute left-1/2 -translate-x-1/2 top-1 z-10">
+            <div class="w-4 h-4 bg-green-600 rounded-full border-4 border-white shadow"></div>
+        </div>
+
+            <!-- Konten -->
+        <div class="timeline-content bg-white rounded-2xl shadow-xl p-8 fade-in">
+            <div class="bg-green-100 text-green-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
+                400 - 1500 M
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-green-800 mb-4">Pengaruh Ayurveda & Pengobatan Tiongkok</h3>
+            <p class="text-gray-700 leading-relaxed">
+                Masuknya agama Hindu-Buddha membawa pengaruh sistem pengobatan Ayurveda dari India. Kontak perdagangan dengan Tiongkok juga memperkenalkan konsep pengobatan tradisional Tiongkok. Perpaduan ini memperkaya khazanah pengobatan tradisional Nusantara.
+            </p>
+            <br>
+            <p class="text-sm text-gray-600 italic">
+                Di era ini, kerajaan-kerajaan seperti Majapahit dan Sriwijaya mulai mendokumentasikan resep-resep jamu dalam lontar dan prasasti.
+            </p>
+        </div>
+
+        <!-- Gambar -->
+        <div class="flex justify-center fade-in">
+        <img src="/foto/prasejarah.jpg"
+            alt="Ilustrasi masyarakat Austronesia menggunakan tumbuhan obat pada masa prasejarah"
+            loading="lazy"
+            class="rounded-2xl shadow-xl w-full max-w-md h-64 md:h-80 object-cover">
+        </div>
+  </div>
+
+  <!-- Era Kerajaan Hindu-Buddha -->
+<div class="relative timeline-line max-w-6xl mx-auto">
+  
+        <!-- Timeline Item -->
+        <div class="relative mb-20 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Timeline dot -->
+            <div class="absolute left-1/2 -translate-x-1/2 top-1 z-10">
+            <div class="w-4 h-4 bg-green-600 rounded-full border-4 border-white shadow"></div>
+        </div>
+
+            <!-- Konten -->
+        <div class="timeline-content bg-white rounded-2xl shadow-xl p-8 fade-in">
+            <div class="bg-green-100 text-green-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
+                1500 - 1800 M
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-green-800 mb-4">Perkembangan di Keraton Jawa</h3>
+            <p class="text-gray-700 leading-relaxed">
+               Keraton-keraton Jawa, terutama Mataram, Yogyakarta, dan Surakarta, mengembangkan sistem jamu yang lebih sistematis. Para tabib keraton menciptakan ramuan-ramuan khusus untuk keluarga kerajaan dan mengembangkan literatur pengobatan tradisional.
+            </p>
+            <br>
+            <div class="bg-green-50 p-4 rounded-lg">
                             <p class="text-sm text-green-800 font-medium">
                                 📜 Naskah "Serat Centhini" dan "Serat Kawruh Bab Jampi-Jampi" menjadi dokumentasi penting jamu era ini.
                             </p>
                         </div>
-                    </div>
-                </div>
+        </div>
 
-                <!-- Era Kolonial -->
-                <div class="timeline-item relative mb-20 fade-in">
-                    <div class="timeline-dot top-8"></div>
-                    <div class="timeline-content w-full md:w-5/12 bg-white rounded-2xl shadow-xl p-8">
-                        <div class="bg-red-100 text-red-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
-                            1800 - 1942 M
-                        </div>
-                        <h3 class="font-serif text-2xl font-bold text-green-800 mb-4">Masa Penjajahan Belanda</h3>
-                        <p class="text-gray-700 leading-relaxed mb-4">
-                            Pemerintah kolonial Belanda mulai meneliti tumbuhan obat Nusantara. Kebun Raya Bogor didirikan pada 1817 untuk penelitian botani, termasuk tanaman obat. Namun, penggunaan jamu oleh masyarakat pribumi tetap berlanjut secara tradisional.
-                        </p>
-                        <p class="text-sm text-gray-600">
+        <!-- Gambar -->
+        <div class="flex justify-center fade-in">
+        <img src="/foto/prasejarah.jpg"
+            alt="Ilustrasi masyarakat Austronesia menggunakan tumbuhan obat pada masa prasejarah"
+            loading="lazy"
+            class="rounded-2xl shadow-xl w-full max-w-md h-64 md:h-80 object-cover">
+        </div>
+  </div>
+
+<!-- Kolonial -->
+  <div class="relative timeline-line max-w-6xl mx-auto">
+  
+        <!-- Timeline Item -->
+        <div class="relative mb-20 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Timeline dot -->
+            <div class="absolute left-1/2 -translate-x-1/2 top-1 z-10">
+            <div class="w-4 h-4 bg-green-600 rounded-full border-4 border-white shadow"></div>
+        </div>
+
+            <!-- Konten -->
+        <div class="timeline-content bg-white rounded-2xl shadow-xl p-8 fade-in">
+            <div class="bg-green-100 text-green-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
+                1500 - 1800 M
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-green-800 mb-4">Masa Penjajahan Belanda</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Pemerintah kolonial Belanda mulai meneliti tumbuhan obat Nusantara. Kebun Raya Bogor didirikan pada 1817 untuk penelitian botani, termasuk tanaman obat. Namun, penggunaan jamu oleh masyarakat pribumi tetap berlanjut secara tradisional.
+            </p>
+            <br>
+           <p class="text-sm text-gray-600">
                             Pada periode ini, mulai muncul produsen jamu skala kecil yang menjual ramuan dalam bentuk bubuk atau simplisia kering.
                         </p>
-                    </div>
-                </div>
+        </div>
 
-                <!-- Era Kemerdekaan Awal -->
-                <div class="timeline-item relative mb-20 fade-in">
-                    <div class="timeline-dot top-8"></div>
-                    <div class="timeline-content w-full md:w-5/12 bg-white rounded-2xl shadow-xl p-8">
-                        <div class="bg-blue-100 text-blue-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
-                            1945 - 1965 M
-                        </div>
-                        <h3 class="font-serif text-2xl font-bold text-green-800 mb-4">Jamu di Awal Kemerdekaan</h3>
-                        <p class="text-gray-700 leading-relaxed mb-4">
-                            Pasca kemerdekaan, pemerintah Indonesia mulai memberikan perhatian pada pengobatan tradisional. Jamu semakin populer sebagai alternatif pengobatan yang terjangkau bagi masyarakat. Mulai bermunculan industri jamu rumahan yang berkembang pesat.
-                        </p>
-                        <div class="bg-blue-50 p-4 rounded-lg">
+        <!-- Gambar -->
+        <div class="flex justify-center fade-in">
+        <img src="/foto/prasejarah.jpg"
+            alt="Ilustrasi masyarakat Austronesia menggunakan tumbuhan obat pada masa prasejarah"
+            loading="lazy"
+            class="rounded-2xl shadow-xl w-full max-w-md h-64 md:h-80 object-cover">
+        </div>
+  </div>
+
+<!-- Jamu di awal kemerdekaan -->
+  <div class="relative timeline-line max-w-6xl mx-auto">
+  
+        <!-- Timeline Item -->
+        <div class="relative mb-20 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Timeline dot -->
+            <div class="absolute left-1/2 -translate-x-1/2 top-1 z-10">
+            <div class="w-4 h-4 bg-green-600 rounded-full border-4 border-white shadow"></div>
+        </div>
+
+            <!-- Konten -->
+        <div class="timeline-content bg-white rounded-2xl shadow-xl p-8 fade-in">
+            <div class="bg-green-100 text-green-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
+                1500 - 1800 M
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-green-800 mb-4">Jamu di Awal Kemerdekaan</h3>
+            <p class="text-gray-700 leading-relaxed">
+               Pasca kemerdekaan, pemerintah Indonesia mulai memberikan perhatian pada pengobatan tradisional. Jamu semakin populer sebagai alternatif pengobatan yang terjangkau bagi masyarakat. Mulai bermunculan industri jamu rumahan yang berkembang pesat.
+            </p>
+            <br>
+            <div class="bg-blue-50 p-4 rounded-lg">
                             <p class="text-sm text-blue-800">
                                 🏭 Periode ini menandai awal industrialisasi jamu dengan munculnya pabrik-pabrik jamu pertama di Jawa.
                             </p>
                         </div>
-                    </div>
-                </div>
+        </div>
 
-                <!-- Era Orde Baru -->
-                <div class="timeline-item relative mb-20 fade-in">
-                    <div class="timeline-dot top-8"></div>
-                    <div class="timeline-content w-full md:w-5/12 bg-white rounded-2xl shadow-xl p-8">
-                        <div class="bg-purple-100 text-purple-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
-                            1966 - 1998 M
-                        </div>
-                        <h3 class="font-serif text-2xl font-bold text-green-800 mb-4">Modernisasi dan Industrialisasi</h3>
-                        <p class="text-gray-700 leading-relaxed mb-4">
-                            Era Orde Baru menandai modernisasi industri jamu. Perusahaan-perusahaan besar seperti Nyonya Meneer, Jamu Cap Jago, dan Air Mancur berkembang pesat. Pemerintah mulai mengatur standar produksi dan keamanan jamu melalui Departemen Kesehatan.
-                        </p>
-                        <p class="text-sm text-gray-600 mb-4">
+        <!-- Gambar -->
+        <div class="flex justify-center fade-in">
+        <img src="/foto/prasejarah.jpg"
+            alt="Ilustrasi masyarakat Austronesia menggunakan tumbuhan obat pada masa prasejarah"
+            loading="lazy"
+            class="rounded-2xl shadow-xl w-full max-w-md h-64 md:h-80 object-cover">
+        </div>
+  </div>
+
+<!-- Era orde baru -->
+  <div class="relative timeline-line max-w-6xl mx-auto">
+  
+        <!-- Timeline Item -->
+        <div class="relative mb-20 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Timeline dot -->
+            <div class="absolute left-1/2 -translate-x-1/2 top-1 z-10">
+            <div class="w-4 h-4 bg-green-600 rounded-full border-4 border-white shadow"></div>
+        </div>
+
+            <!-- Konten -->
+        <div class="timeline-content bg-white rounded-2xl shadow-xl p-8 fade-in">
+            <div class="bg-green-100 text-green-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
+                1500 - 1800 M
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-green-800 mb-4">Modernisasi dan Industrialisasi</h3>
+            <p class="text-gray-700 leading-relaxed">
+               Era Orde Baru menandai modernisasi industri jamu. Perusahaan-perusahaan besar seperti Nyonya Meneer, Jamu Cap Jago, dan Air Mancur berkembang pesat. Pemerintah mulai mengatur standar produksi dan keamanan jamu melalui Departemen Kesehatan.
+            </p>
+            <br>
+            <p class="text-sm text-gray-600 mb-4">
                             Penelitian ilmiah tentang jamu juga mulai intensif dilakukan di berbagai universitas dan lembaga penelitian.
                         </p>
                         <div class="bg-green-50 p-4 rounded-lg">
@@ -294,38 +384,71 @@
                                 🔬 Didirikannya Pusat Penelitian dan Pengembangan Farmasi (1975) menandai era penelitian jamu modern.
                             </p>
                         </div>
-                    </div>
-                </div>
+        </div>
 
-                <!-- Era Reformasi -->
-                <div class="timeline-item relative mb-20 fade-in">
-                    <div class="timeline-dot top-8"></div>
-                    <div class="timeline-content w-full md:w-5/12 bg-white rounded-2xl shadow-xl p-8">
-                        <div class="bg-indigo-100 text-indigo-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
-                            1998 - 2010 M
-                        </div>
-                        <h3 class="font-serif text-2xl font-bold text-green-800 mb-4">Era Reformasi dan Standardisasi</h3>
-                        <p class="text-gray-700 leading-relaxed mb-4">
-                            Pasca reformasi, regulasi jamu semakin ketat dengan dibentuknya BPOM (2001). Sistem sertifikasi CPOTB (Cara Pembuatan Obat Tradisional yang Baik) diberlakukan. Jamu mulai diklasifikasikan menjadi tiga kategori: Jamu, Obat Herbal Terstandar (OHT), dan Fitofarmaka.
-                        </p>
-                        <p class="text-sm text-gray-600">
+        <!-- Gambar -->
+        <div class="flex justify-center fade-in">
+        <img src="/foto/prasejarah.jpg"
+            alt="Ilustrasi masyarakat Austronesia menggunakan tumbuhan obat pada masa prasejarah"
+            loading="lazy"
+            class="rounded-2xl shadow-xl w-full max-w-md h-64 md:h-80 object-cover">
+        </div>
+  </div>
+
+<!-- Era Reformasi -->
+  <div class="relative timeline-line max-w-6xl mx-auto">
+  
+        <!-- Timeline Item -->
+        <div class="relative mb-20 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Timeline dot -->
+            <div class="absolute left-1/2 -translate-x-1/2 top-1 z-10">
+            <div class="w-4 h-4 bg-green-600 rounded-full border-4 border-white shadow"></div>
+        </div>
+
+            <!-- Konten -->
+        <div class="timeline-content bg-white rounded-2xl shadow-xl p-8 fade-in">
+            <div class="bg-green-100 text-green-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
+                1500 - 1800 M
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-green-800 mb-4">Era Reformasi dan Standardisasi</h3>
+            <p class="text-gray-700 leading-relaxed">
+               Pasca reformasi, regulasi jamu semakin ketat dengan dibentuknya BPOM (2001). Sistem sertifikasi CPOTB (Cara Pembuatan Obat Tradisional yang Baik) diberlakukan. Jamu mulai diklasifikasikan menjadi tiga kategori: Jamu, Obat Herbal Terstandar (OHT), dan Fitofarmaka.
+            </p>
+            <br>
+            <p class="text-sm text-gray-600">
                             Periode ini juga menandai meningkatnya minat penelitian farmakologi dan fitokimia terhadap tanaman obat Indonesia.
                         </p>
-                    </div>
-                </div>
+        </div>
 
-                <!-- Era Modern -->
-                <div class="timeline-item relative mb-20 fade-in">
-                    <div class="timeline-dot top-8"></div>
-                    <div class="timeline-content w-full md:w-5/12 bg-white rounded-2xl shadow-xl p-8">
-                        <div class="bg-green-100 text-green-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
-                            2010 - Sekarang
-                        </div>
-                        <h3 class="font-serif text-2xl font-bold text-green-800 mb-4">Jamu di Era Digital</h3>
-                        <p class="text-gray-700 leading-relaxed mb-4">
-                            Era digital membawa transformasi besar pada industri jamu. E-commerce memudahkan distribusi, media sosial meningkatkan awareness, dan teknologi modern mendukung penelitian yang lebih canggih. Pemerintah meluncurkan program "Saintifikasi Jamu" untuk validasi ilmiah.
-                        </p>
-                        <div class="space-y-3">
+        <!-- Gambar -->
+        <div class="flex justify-center fade-in">
+        <img src="/foto/prasejarah.jpg"
+            alt="Ilustrasi masyarakat Austronesia menggunakan tumbuhan obat pada masa prasejarah"
+            loading="lazy"
+            class="rounded-2xl shadow-xl w-full max-w-md h-64 md:h-80 object-cover">
+        </div>
+  </div>
+
+     <!-- Era Modern -->
+  <div class="relative timeline-line max-w-6xl mx-auto">
+  
+        <!-- Timeline Item -->
+        <div class="relative mb-20 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Timeline dot -->
+            <div class="absolute left-1/2 -translate-x-1/2 top-1 z-10">
+            <div class="w-4 h-4 bg-green-600 rounded-full border-4 border-white shadow"></div>
+        </div>
+
+            <!-- Konten -->
+        <div class="timeline-content bg-white rounded-2xl shadow-xl p-8 fade-in">
+            <div class="bg-green-100 text-green-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
+                1500 - 1800 M
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-green-800 mb-4">Jamu di Era Digital</h3>
+            <p class="text-gray-700 leading-relaxed">
+               Era digital membawa transformasi besar pada industri jamu. E-commerce memudahkan distribusi, media sosial meningkatkan awareness, dan teknologi modern mendukung penelitian yang lebih canggih. Pemerintah meluncurkan program "Saintifikasi Jamu" untuk validasi ilmiah.
+            <br>
+           <div class="space-y-3">
                             <div class="bg-emerald-50 p-3 rounded-lg">
                                 <p class="text-sm text-emerald-800 font-medium">
                                     📱 Aplikasi mobile untuk konsultasi jamu dan pengobatan tradisional
@@ -342,9 +465,16 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
-                </div>
+        </div>
 
+        <!-- Gambar -->
+        <div class="flex justify-center fade-in">
+        <img src="/foto/prasejarah.jpg"
+            alt="Ilustrasi masyarakat Austronesia menggunakan tumbuhan obat pada masa prasejarah"
+            loading="lazy"
+            class="rounded-2xl shadow-xl w-full max-w-md h-64 md:h-80 object-cover">
+        </div>
+  </div>
             </div>
         </div>
     </section>
