@@ -169,13 +169,27 @@
                     <span class="text-xl font-bold text-green-800">JamuSehat</span>
                 </div>
 
-                <!-- Desktop Navigation Menu -->
                 <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-green-700 hover:text-green-900 transition-colors font-medium">Beranda</a>
-                    <a href="#katalog" class="text-green-700 hover:text-green-900 transition-colors font-medium">Katalog</a>
-                    <a href="#kategori" class="text-green-700 hover:text-green-900 transition-colors font-medium">Kategori</a>
-                    <a href="#bahan" class="text-green-700 hover:text-green-900 transition-colors font-medium">Bahan-Bahan</a>
-                    <a href="#tips" class="text-green-700 hover:text-green-900 transition-colors font-medium">Tips</a>
+                    <a href="index.html" 
+                        class="py-2 border-b-2 border-transparent hover:border-green-700 text-green-700 hover:text-green-900 transition-colors">
+                        Beranda
+                    </a>
+                    <a href="sejarah.html" 
+                        class="py-2 border-b-2 border-transparent hover:border-green-700 text-green-700 hover:text-green-900 transition-colors">
+                        Sejarah Jamu
+                    </a>
+                    <a href="#" 
+                        class="py-2 border-b-2 border-green-700 text-green-900 font-semibold transition-colors">
+                        Katalog Jamu
+                    </a>
+                    <a href="#tentang" 
+                        class="py-2 border-b-2 border-transparent hover:border-green-700 text-green-700 hover:text-green-900 transition-colors">
+                        Tentang
+                    </a>
+                    <a href="#contact" 
+                        class="py-2 border-b-2 border-transparent hover:border-green-700 text-green-700 hover:text-green-900 transition-colors">
+                        Kontak
+                    </a>
                 </div>
 
                 <!-- Mobile menu button -->
@@ -899,11 +913,11 @@
         mobileMenu.className = 'md:hidden bg-white shadow-lg rounded-lg mt-2 p-4 space-y-2';
         mobileMenu.style.display = 'none';
         mobileMenu.innerHTML = `
-            <a href="#home" class="block text-green-700 hover:text-green-900 py-2">Beranda</a>
-            <a href="#katalog" class="block text-green-700 hover:text-green-900 py-2">Katalog</a>
-            <a href="#kategori" class="block text-green-700 hover:text-green-900 py-2">Kategori</a>
-            <a href="#bahan" class="block text-green-700 hover:text-green-900 py-2">Bahan-Bahan</a>
-            <a href="#tips" class="block text-green-700 hover:text-green-900 py-2">Tips</a>
+            <a href="index.html" class="block text-green-700 hover:text-green-900 py-2">Beranda</a>
+            <a href="sejarah.html" class="block text-green-700 hover:text-green-900 py-2">Sejarah Jamu</a>
+            <a href="katalog.html" class="block text-green-700 hover:text-green-900 py-2">Katalog Jamu</a>
+            <a href="#tentang" class="block text-green-700 hover:text-green-900 py-2">Tentang</a>
+            <a href="#kontak" class="block text-green-700 hover:text-green-900 py-2">Kontak</a>
         `;
         
         mobileMenuBtn.parentNode.appendChild(mobileMenu);
