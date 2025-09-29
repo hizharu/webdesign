@@ -158,7 +158,7 @@
 <body class="bg-gradient-to-br from-green-50 via-yellow-50 to-orange-50 text-gray-800">
 
     <!-- Navigation - Menggunakan design yang sama dengan halaman sejarah -->
-    <nav class="fixed w-full z-50 glass-effect transition-all duration-300" id="navbar">
+    <nav class="fixed w-full z-50 glass-effect transition-all duration-300 bg-white/20 backdrop-blur-md " id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
                 <!-- Logo dan brand name -->
@@ -171,23 +171,23 @@
 
                 <div class="hidden md:flex space-x-8">
                     <a href="index.html" 
-                        class="py-2 border-b-2 border-transparent hover:border-green-700 text-green-700 hover:text-green-900 transition-colors">
+                        class="py-2 border-b-2 border-transparent hover:border-amber-700 text-amber-600 hover:text-amber-700 transition-colors">
                         Beranda
                     </a>
                     <a href="sejarah.html" 
-                        class="py-2 border-b-2 border-transparent hover:border-green-700 text-green-700 hover:text-green-900 transition-colors">
+                        class="py-2 border-b-2 border-transparent hover:border-amber-700 text-amber-600 hover:text-amber-700 transition-colors">
                         Sejarah Jamu
                     </a>
-                    <a href="#" 
-                        class="py-2 border-b-2 border-green-700 text-green-900 font-semibold transition-colors">
+                    <a href="katalog.html" 
+                        class="py-2 border-b-2 border-amber-700 text-amber-700 font-semibold transition-colors">
                         Katalog Jamu
                     </a>
                     <a href="#tentang" 
-                        class="py-2 border-b-2 border-transparent hover:border-green-700 text-green-700 hover:text-green-900 transition-colors">
+                        class="py-2 border-b-2 border-transparent hover:border-amber-700 text-amber-600 hover:text-amber-700 transition-colors">
                         Tentang
                     </a>
                     <a href="#contact" 
-                        class="py-2 border-b-2 border-transparent hover:border-green-700 text-green-700 hover:text-green-900 transition-colors">
+                        class="py-2 border-b-2 border-transparent hover:border-amber-700 text-amber-600 hover:text-amber-700 transition-colors">
                         Kontak
                     </a>
                 </div>
@@ -203,7 +203,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center relative overflow-hidden jamu-pattern">
+    <section id="home" class="bg-[url('/assets/images/katalog.jpg')] bg-cover bg-center min-h-screen flex items-start md:items-center relative jamu-pattern pt-16">
         <div class="absolute inset-0 gradient-bg opacity-5"></div>
 
         <!-- Floating decorative elements -->
@@ -904,6 +904,9 @@
     </footer>
 
     <script>
+
+
+        
         /* ====================================
            MOBILE MENU FUNCTIONALITY
            Handles responsive navigation menu
@@ -967,18 +970,16 @@
             });
         }
 
-        /* ====================================
-           NAVBAR SCROLL EFFECT
-           Changes navbar background opacity on scroll
-        ==================================== */
+        // SCROLL NAVBAR
         window.addEventListener('scroll', () => {
             const navbar = document.getElementById('navbar');
             if (window.scrollY > 100) {
                 navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
             } else {
-                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
+                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.2)';
             }
-        });
+            });
+
 
         /* ====================================
            JAMU FILTER FUNCTIONALITY
