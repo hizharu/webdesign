@@ -156,9 +156,8 @@
     </style>
 </head>
 <body class="bg-gradient-to-br from-green-50 via-yellow-50 to-orange-50 text-gray-800">
-
     <!-- Navigation - Menggunakan design yang sama dengan halaman sejarah -->
-    <nav class="fixed w-full z-50 glass-effect transition-all duration-300 bg-white/20 backdrop-blur-md " id="navbar">
+    <nav class="fixed w-full z-50 glass-effect transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
                 <!-- Logo dan brand name -->
@@ -170,24 +169,24 @@
                 </div>
 
                 <div class="hidden md:flex space-x-8">
-                    <a href="index.html" 
-                        class="py-2 border-b-2 border-transparent hover:border-amber-700 text-amber-600 hover:text-amber-700 transition-colors">
+                    <a href="index.html"
+                        class="py-2 border-b-2 border-transparent hover:border-green-700 text-green-700 hover:text-green-900 transition-colors">
                         Beranda
                     </a>
                     <a href="sejarah.html" 
-                        class="py-2 border-b-2 border-transparent hover:border-amber-700 text-amber-600 hover:text-amber-700 transition-colors">
+                        class="py-2 border-b-2 border-transparent hover:border-green-700 text-green-700 hover:text-green-900 transition-colors">
                         Sejarah Jamu
                     </a>
-                    <a href="katalog.html" 
-                        class="py-2 border-b-2 border-amber-700 text-amber-700 font-semibold transition-colors">
+                    <a href="#" 
+                        class="py-2 border-b-2 border-green-700 text-green-900 font-semibold transition-colors">
                         Katalog Jamu
                     </a>
                     <a href="#tentang" 
-                        class="py-2 border-b-2 border-transparent hover:border-amber-700 text-amber-600 hover:text-amber-700 transition-colors">
+                        class="py-2 border-b-2 border-transparent hover:border-green-700 text-green-700 hover:text-green-900 transition-colors">
                         Tentang
                     </a>
                     <a href="#contact" 
-                        class="py-2 border-b-2 border-transparent hover:border-amber-700 text-amber-600 hover:text-amber-700 transition-colors">
+                        class="py-2 border-b-2 border-transparent hover:border-green-700 text-green-700 hover:text-green-900 transition-colors">
                         Kontak
                     </a>
                 </div>
@@ -203,7 +202,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="bg-[url('/assets/images/katalog.jpg')] bg-cover bg-center min-h-screen flex items-start md:items-center relative jamu-pattern pt-16">
+    <section id="home" class="min-h-screen flex items-center relative overflow-hidden jamu-pattern">
         <div class="absolute inset-0 gradient-bg opacity-5"></div>
 
         <!-- Floating decorative elements -->
@@ -911,24 +910,29 @@
            MOBILE MENU FUNCTIONALITY
            Handles responsive navigation menu
         ==================================== */
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.createElement('div');
-        mobileMenu.className = 'md:hidden bg-white shadow-lg rounded-lg mt-2 p-4 space-y-2';
-        mobileMenu.style.display = 'none';
-        mobileMenu.innerHTML = `
-            <a href="index.html" class="block text-green-700 hover:text-green-900 py-2">Beranda</a>
-            <a href="sejarah.html" class="block text-green-700 hover:text-green-900 py-2">Sejarah Jamu</a>
-            <a href="katalog.html" class="block text-green-700 hover:text-green-900 py-2">Katalog Jamu</a>
-            <a href="#tentang" class="block text-green-700 hover:text-green-900 py-2">Tentang</a>
-            <a href="#kontak" class="block text-green-700 hover:text-green-900 py-2">Kontak</a>
-        `;
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const navbar = document.getElementById('navbar');
+
+        // bikin elemen menu
+const mobileMenu = document.createElement('div');
+mobileMenu.className = 'absolute top-16 left-0 w-full md:hidden bg-white shadow-lg rounded-lg p-4 space-y-2 hidden';
+mobileMenu.innerHTML = `
+    <a href="index.html" class="block text-green-700 hover:text-green-900 py-2">Beranda</a>
+    <a href="sejarah.html" class="block text-green-700 hover:text-green-900 py-2">Sejarah Jamu</a>
+    <a href="katalog.html" class="block text-green-700 hover:text-green-900 py-2">Katalog Jamu</a>
+    <a href="#tentang" class="block text-green-700 hover:text-green-900 py-2">Tentang</a>
+    <a href="#kontak" class="block text-green-700 hover:text-green-900 py-2">Kontak</a>
+`;
+
+navbar.appendChild(mobileMenu);
+
+// toggle menu
+mobileMenuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+});
+
+
         
-        mobileMenuBtn.parentNode.appendChild(mobileMenu);
-        
-        // Toggle mobile menu visibility
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.style.display = mobileMenu.style.display === 'none' ? 'block' : 'none';
-        });
 
         /* ====================================
            SMOOTH SCROLLING NAVIGATION
@@ -971,14 +975,14 @@
         }
 
         // SCROLL NAVBAR
-        window.addEventListener('scroll', () => {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 100) {
-                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
-            } else {
-                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.2)';
-            }
-            });
+        // window.addEventListener('scroll', () => {
+        //     const navbar = document.getElementById('navbar');
+        //     if (window.scrollY > 100) {
+        //         navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+        //     } else {
+        //         navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.2)';
+        //     }
+        //     });
 
 
         /* ====================================
