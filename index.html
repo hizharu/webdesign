@@ -125,10 +125,22 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        .fade-in.show {
+        opacity: 1;
+        transform: translateY(0);
+        }
     </style>
 </head>
+
+
 <body class="bg-gradient-to-br from-green-50 via-yellow-50 to-orange-50 overflow-x-hidden">
-    
+    <!-- Preloader -->
+<div id="preloader" class="fixed inset-0 bg-white flex items-center justify-center z-50">
+  <div class="animate-spin rounded-full h-12 w-12 border-t-4 border-green-700 border-solid"></div>
+</div>
+
+<div id="content" class="hidden">
     <!-- Navigation -->
     <nav class="fixed w-full z-50 glass-effect transition-all duration-300 " id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -677,6 +689,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </footer>
 
     <script>
@@ -874,6 +887,21 @@
                 mobileMenu.style.display = 'none';
             }
         });
+
+        // tunggu sampai halaman selesai loading
+        window.addEventListener("load", () => {
+        const preloader = document.getElementById("preloader");
+        const content = document.getElementById("content");
+
+        preloader.style.display = "none";  // sembunyikan loader
+        content.classList.remove("hidden"); // tampilkan konten
+
+        // trigger animasi elemen-elemen dengan fade-in
+        document.querySelectorAll(".fade-in").forEach(el => {
+            setTimeout(() => el.classList.add("show"), 100);
+        });
+        });
+
 
         // Focus management for better accessibility
         const focusableElements = document.querySelectorAll('a, button, input, textarea, select');
