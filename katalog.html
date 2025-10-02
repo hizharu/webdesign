@@ -186,10 +186,6 @@
                         class="py-2 border-b-2 border-transparent hover:border-green-700 text-green-700 hover:text-green-900 transition-colors">
                         Asisten AI
                     </a>
-                    <a href="#tentang" 
-                        class="py-2 border-b-2 border-transparent hover:border-green-700 text-green-700 hover:text-green-900 transition-colors">
-                        Tentang
-                    </a>
                 </div>
 
                 <!-- Mobile menu button -->
@@ -226,11 +222,11 @@
                         Temukan koleksi lengkap jamu tradisional Indonesia dengan berbagai khasiat untuk kesehatan, kecantikan, dan stamina. Setiap resep telah teruji secara turun-temurun dan diperkaya dengan pengetahuan modern.
                     </p>
 
-                    <!-- Statistics -->
+                    <!-- Statistik -->
                     <div class="grid grid-cols-3 gap-6">
                         <div class="text-center">
-                            <div class="text-2xl font-bold text-green-800" id="counter1">50+</div>
-                            <div class="text-sm text-green-600">Resep Jamu</div>
+                            <div class="text-2xl font-bold text-green-800" id="counter1">20+</div>
+                            <div class="text-sm text-green-600">Resep Jamu Tersedia</div>
                         </div>
                         <div class="text-center">
                             <div class="text-2xl font-bold text-green-800" id="counter2">100+</div>
@@ -243,7 +239,7 @@
                     </div>
                 </div>
 
-                <!-- Right content - Hero illustration -->
+                <!-- Konten Kanan -->
                 <div class="slide-in-right relative">
                     <div class="relative">
                         <div class="absolute inset-0 bg-gradient-to-br from-green-400 to-yellow-400 rounded-3xl transform rotate-6 opacity-20"></div>
@@ -297,7 +293,7 @@
             </div>
 
                         <!-- 🔎 Search bar -->
-            <div class="flex justify-center mb-8 gap-2">
+            <div class="flex justify-center mb-8 gap-2 fade-in">
                 <input id="search-input" type="text" placeholder="Cari jamu..." class="..."/>
                 <button id="search-btn" class="bg-green-500 text-white px-4 py-2 rounded-lg">Cari</button>
             </div>
@@ -343,7 +339,7 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 jamu-grid" id="jamu-container">
                 
                 <!-- Jamu Card 1: Beras Kencur -->
-                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan kecantikan">
+                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="stamina kesehatan" data-name="Jamu Beras Kencur">
                     <!-- Jamu image placeholder -->
                     <div class="h-48 bg-[url('/assets/images/jamu/jamuberaskencur.jpg')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative">
                         <div class="absolute top-4 left-4">
@@ -413,11 +409,11 @@
                 </div>
 
                 <!-- Jamu Card 2: Jamu Kunyit Asem  -->
-                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan kecantikan">
+                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan detox" data-name="Jamu Kunyit Asem">
                     <!-- Jamu image placeholder -->
-                    <div class="h-48 bg-[url('/assets/images/jamu/jamukunyitasam.jpg')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative">
+                    <div class="h-48 bg-[url('/assets/images/jamu/jamukunyitasam.jpg')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative" alt="Gambar Jamu Kunyit Asem">
                         <div class="absolute top-4 left-4">
-                            <span class="badge-stamina text-white text-xs font-bold px-3 py-1 rounded-full">Stamina</span>
+                            <span class="badge-detox text-white text-xs font-bold px-3 py-1 rounded-full">Detox</span>
                         </div>
                         <div class="absolute top-4 right-4">
                             <span class="badge-kesehatan text-white text-xs font-bold px-3 py-1 rounded-full">Kesehatan</span>
@@ -479,7 +475,7 @@
                 </div>
 
                 <!-- Jamu Card 3: Kunci Sirih  -->
-                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan kecantikan" data-name="Jamu Beras Kencur">
+                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan kecantikan" data-name="Kunci Sirih">
                     <!-- Jamu image placeholder -->
                     <div class="h-48 bg-[url('/assets/images/jamu/kuncisereh.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative">
                         <div class="absolute top-4 left-4">
@@ -502,7 +498,7 @@
                         <div class="mb-4">
                             <h4 class="font-semibold text-green-800 mb-2">Manfaat Utama:</h4>
                             <ul class="text-sm text-gray-600 space-y-1">
-                                <li class="flex items-center"><span class="text-green-500 mr-2">•</span>  Atasi Keputihan dan bau badan tidak sedap</li>
+                                <li class="flex items-center"><span class="text-green-500 mr-2">•</span>Atasi Keputihan dan bau badan tidak sedap</li>
                                 <li class="flex items-center"><span class="text-green-500 mr-2">•</span> Mengencangkan organ kewanitaan</li>
                                 <li class="flex items-center"><span class="text-green-500 mr-2">•</span> Mencegah dan mengatasi Jerawat (rawat kulit dari dalam)</li>
                             </ul>
@@ -547,9 +543,9 @@
                 </div>
 
                 <!-- Jamu Card 4: Temulawak  -->
-                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan kecantikan">
+                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan detox" data-name="Temulawak">
                     <!-- Jamu image placeholder -->
-                    <div class="h-48 bg-[url('/assets/images/jamu/jamutemulawak.jpeg')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative">
+                    <div class="h-48 bg-[url('/assets/images/jamu/jamutemulawak.jpeg')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative" alt="Gambar jamu Temulawak">
                         <div class="absolute top-4 left-4">
                             <span class="badge-detox text-white text-xs font-bold px-3 py-1 rounded-full">Detox</span>
                         </div>
@@ -610,9 +606,9 @@
                 </div>
 
                 <!-- Jamu Card 5: Wedang Jahe Serai  -->
-                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan kecantikan">
+                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan kecantikan" data-name="Wedang Jahe Serai ">
                     <!-- Jamu image placeholder -->
-                    <div class="h-48 bg-[url('/assets/images/jamu/wedangjahesereh.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative">
+                    <div class="h-48 bg-[url('/assets/images/jamu/wedangjahesereh.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative" alt="Gambar Jamu Wedang Jahe Serai">
                         <div class="absolute top-4 left-4">
                             <span class="badge-detox text-white text-xs font-bold px-3 py-1 rounded-full">Detox</span>
                         </div>
@@ -675,9 +671,9 @@
                 </div>
 
                 <!-- Jamu Card 6: Jamu Jahe merah serai -->
-                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan">
+                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan" data-name="Jamu Jahe merah serai">
                     <!-- Jamu image placeholder -->
-                    <div class="h-48 bg-[url('/assets/images/jamu/jamujahemerah.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative">
+                    <div class="h-48 bg-[url('/assets/images/jamu/jamujahemerah.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative" alt="Gambar Jamu Jahe merah serai">
                         <div class="absolute top-4 right-4">
                             <span class="badge-kesehatan text-white text-xs font-bold px-3 py-1 rounded-full">Kesehatan</span>
                         </div>
@@ -738,7 +734,7 @@
                 </div>
 
                 <!-- Jamu Card 7: Jamu Sambiloto  -->
-                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kecantikan">
+                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kecantikan" data-name="Jamu Sambiloto">
                     <!-- Jamu image placeholder -->
                     <div class="h-48 bg-[url('/assets/images/jamu/jamusambiloto.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative" alt="Gambar jamu sambiloto">
                         <div class="absolute top-4 left-4">
@@ -803,11 +799,14 @@
                 </div>
 
                 <!-- Jamu Card 8: Jamu Sinom  -->
-                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kecantikan">
+                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kecantikan pencernaan" data-name="Jamu Sinom">
                     <!-- Jamu image placeholder -->
-                    <div class="h-48 bg-[url('/assets/images/jamu/jamusinomwebp.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative">
+                    <div class="h-48 bg-[url('/assets/images/jamu/jamusinomwebp.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative" alt="Gambar Jamu Sinom">
                         <div class="absolute top-4 left-4">
                             <span class="badge-kecantikan text-white text-xs font-bold px-3 py-1 rounded-full">Kecantikan</span>
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <span class="badge-pencernaan text-white text-xs font-bold px-3 py-1 rounded-full">Pencernaan</span>
                         </div>
                     </div>
                     
@@ -864,9 +863,9 @@
                 </div>
 
                 <!-- Jamu Card 9: Jamu Cabe Puyang  -->
-                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan stamina">
+                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan stamina" data-name="Jamu Cabe Puyang">
                     <!-- Jamu image placeholder -->
-                    <div class="h-48 bg-[url('/assets/images/jamu/jamucabepuyangwebp.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative">
+                    <div class="h-48 bg-[url('/assets/images/jamu/jamucabepuyangwebp.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative" alt="Gambar Jamu Cabe Puyang">
                         <div class="absolute top-4 left-4">
                             <span class="badge-stamina text-white text-xs font-bold px-3 py-1 rounded-full">Stamina</span>
                         </div>
@@ -931,11 +930,11 @@
                 </div>
 
                 <!-- Jamu Card 10: Jamu Temu Ireng  -->
-                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan stamina">
+                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan detox" data-name="Jamu Temu Ireng">
                     <!-- Jamu image placeholder -->
-                    <div class="h-48 bg-[url('/assets/images/jamu/jamutemuirengWEBP.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative">
+                    <div class="h-48 bg-[url('/assets/images/jamu/jamutemuirengWEBP.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative" alt="Gambar jamu temu ireng">
                         <div class="absolute top-4 left-4">
-                            <span class="badge-stamina text-white text-xs font-bold px-3 py-1 rounded-full">Stamina</span>
+                            <span class="badge-detox text-white text-xs font-bold px-3 py-1 rounded-full">Detox</span>
                         </div>
                         <div class="absolute top-4 right-4">
                             <span class="badge-kesehatan text-white text-xs font-bold px-3 py-1 rounded-full">Kesehatan</span>
@@ -999,9 +998,9 @@
                 </div>
 
                 <!-- Jamu Card 11: Daun Meniran  -->
-                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan kecantikan">
+                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan stamina" data-name="Jamu Daun Meniran">
                     <!-- Jamu image placeholder -->
-                    <div class="h-48 bg-[url('/assets/images/jamu/jamumeniran.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative">
+                    <div class="h-48 bg-[url('/assets/images/jamu/jamumeniran.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative" alt="Gambar Jamu Daun Meniran">
                         <div class="absolute top-4 left-4">
                             <span class="badge-stamina text-white text-xs font-bold px-3 py-1 rounded-full">Stamina</span>
                         </div>
@@ -1065,9 +1064,9 @@
                 </div>
 
                 <!-- Jamu Card 12: Jamu Galian Singset  -->
-                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kecantikan">
+                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kecantikan" data-name="Jamu Galian Singset">
                     <!-- Jamu image placeholder -->
-                    <div class="h-48 bg-[url('/assets/images/jamu/jamugaliansingset.jpg')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative">
+                    <div class="h-48 bg-[url('/assets/images/jamu/jamugaliansingset.jpg')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative" alt="Jamu Galian Singset">
                         <div class="absolute top-4 left-4">
                             <span class="badge-kecantikan text-white text-xs font-bold px-3 py-1 rounded-full">Kecantikan</span>
                         </div>
@@ -1133,9 +1132,9 @@
                 </div>
 
                 <!-- Jamu Card 13: Jamu Daun Pepaya  -->
-                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan">
+                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan" data-name="Jamu Daun Pepaya">
                     <!-- Jamu image placeholder -->
-                    <div class="h-48 bg-[url('/assets/images/jamu/jamudaunpepaya.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative">
+                    <div class="h-48 bg-[url('/assets/images/jamu/jamudaunpepaya.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative" alt="Gambar Jamu Daun Pepaya">
                         <div class="absolute top-4 right-4">
                             <span class="badge-kesehatan text-white text-xs font-bold px-3 py-1 rounded-full">Kesehatan</span>
                         </div>
@@ -1191,9 +1190,9 @@
                 </div>
 
                 <!-- Jamu Card 14: Wedang Uwuh  -->
-                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan">
+                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan" data-name="Wedang Uwuh" >
                     <!-- Jamu image placeholder -->
-                    <div class="h-48 bg-[url('/assets/images/jamu/wedanguwuh.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative">
+                    <div class="h-48 bg-[url('/assets/images/jamu/wedanguwuh.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative" alt="Gambar Jamu Daun Pepaya">
                         <div class="absolute top-4 right-4">
                             <span class="badge-kesehatan text-white text-xs font-bold px-3 py-1 rounded-full">Kesehatan</span>
                         </div>
@@ -1255,9 +1254,9 @@
                 </div>
 
                 <!-- Jamu Card 15: Jamu Pasak Bumi  -->
-                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="stamina">
+                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="stamina" data-name="Jamu Pasak Bumi">
                     <!-- Jamu image placeholder -->
-                    <div class="h-48 bg-[url('/assets/images/jamu/jamupasakbumi.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative">
+                    <div class="h-48 bg-[url('/assets/images/jamu/jamupasakbumi.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative" alt="Jamu Pasak Bumi">
                         <div class="absolute top-4 left-4">
                             <span class="badge-stamina text-white text-xs font-bold px-3 py-1 rounded-full">Stamina</span>
                         </div>
@@ -1317,9 +1316,9 @@
                 </div>
 
                 <!-- Jamu Card 16: Jamu Pegel Linu  -->
-                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan kecantikan">
+                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan stamina" data-name="Jamu Pegel Linu">
                     <!-- Jamu image placeholder -->
-                    <div class="h-48 bg-[url('/assets/images/jamu/jamubrotowali.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative">
+                    <div class="h-48 bg-[url('/assets/images/jamu/jamupegellinu.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative" alt="Gambar Jamu Pegel Linu">
                         <div class="absolute top-4 left-4">
                             <span class="badge-stamina text-white text-xs font-bold px-3 py-1 rounded-full">Stamina</span>
                         </div>
@@ -1330,7 +1329,7 @@
                     
                     <div class="p-6">
                         <!-- Nama jamu -->
-                        <h3 class="font-serif text-2xl font-bold text-green-800 mb-3">Pegel Linu</h3>
+                        <h3 class="font-serif text-2xl font-bold text-green-800 mb-3">Jamu Pegel Linu</h3>
                         <!-- Deskripsi singkat -->
                         <p class="text-gray-600 text-sm mb-4 leading-relaxed">
                             Jamu Pegel Linu adalah salah satu ramuan jamu paling legendaris, diracik secara khusus untuk mengatasi masalah fisik setelah bekerja keras. Komposisinya biasanya bervariasi, namun sering menggabungkan rempah-rempah seperti jahe, kencur, kunyit, temulawak, dan cabai jawa. 
@@ -1386,12 +1385,9 @@
                 </div>
 
                 <!-- Jamu Card 17:  Jamu Empon-Empon   -->
-                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan kecantikan">
+                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan" data-name="Jamu Empon empon">
                     <!-- Jamu image placeholder -->
-                    <div class="h-48 bg-[url('/assets/images/jamu/jamuEmpon-Empon.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative">
-                        <div class="absolute top-4 left-4">
-                            <span class="badge-stamina text-white text-xs font-bold px-3 py-1 rounded-full">Stamina</span>
-                        </div>
+                    <div class="h-48 bg-[url('/assets/images/jamu/jamuEmpon-Empon.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative" alt="Gambar jamu Empon-empon">
                         <div class="absolute top-4 right-4">
                             <span class="badge-kesehatan text-white text-xs font-bold px-3 py-1 rounded-full">Kesehatan</span>
                         </div>
@@ -1401,16 +1397,16 @@
                         <!-- Nama jamu -->
                         <h3 class="font-serif text-2xl font-bold text-green-800 mb-3">Empon-Empon</h3>
                         <!-- Deskripsi singkat -->
-                        <p class="text-gray-600 text-sm mb-4 leading-relaxed">Jamu Empon-Empon adalah nama kolektif untuk ramuan yang menggunakan berbagai jenis rimpang atau "empon-empon" (seperti jahe, kunyit, temulawak, dan kencur). Ramuan ini populer karena merupakan tonik kesehatan universal yang secara tradisional diyakini dapat menangkal berbagai penyakit. 
+                        <p class="text-gray-600 text-sm mb-4 leading-relaxed">Jamu Empon-Empon adalah nama kolektif untuk ramuan yang menggunakan berbagai jenis rimpang atau "empon-empon" (seperti jahe, kunyit, temulawak, dan kencur). Ramuan ini populer karena merupakan tonik kesehatan universal yang secara tradisional diyakini dapat menangkal berbagai penyakit.
                         </p>
                         
                         <!-- Manfaat utama -->
                         <div class="mb-4">
                             <h4 class="font-semibold text-green-800 mb-2">Manfaat Utama:</h4>
                             <ul class="text-sm text-gray-600 space-y-1">
-                                <li class="flex items-center"><span class="text-green-500 mr-2">•</span> meningkatkan daya tahan tubuh (imunitas) secara menyeluruh</li>
-                                <li class="flex items-center"><span class="text-green-500 mr-2">•</span> bersifat anti-inflamasi (anti-peradangan)</li>
-                                <li class="flex items-center"><span class="text-green-500 mr-2">•</span> membantu menghangatkan tubuh</li>
+                                <li class="flex items-center"><span class="text-green-500 mr-2">•</span> Meningkatkan daya tahan tubuh (imunitas) secara menyeluruh</li>
+                                <li class="flex items-center"><span class="text-green-500 mr-2">•</span> Bersifat anti-inflamasi (anti-peradangan)</li>
+                                <li class="flex items-center"><span class="text-green-500 mr-2">•</span> Membantu menghangatkan tubuh</li>
                             </ul>
                         </div>
                         <!-- Bahan bahan -->
@@ -1455,11 +1451,11 @@
                 </div>
 
                 <!-- Jamu Card 18: Jamu Uyup Uyup  -->
-                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan kecantikan">
+                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan detox">
                     <!-- Jamu image placeholder -->
-                    <div class="h-48 bg-[url('/assets/images/jamu/jamubrotowali.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative">
+                    <div class="h-48 bg-[url('/assets/images/jamu/jamuuyupuyup.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative" alt="Jamu Uyup Uyup">
                         <div class="absolute top-4 left-4">
-                            <span class="badge-stamina text-white text-xs font-bold px-3 py-1 rounded-full">Stamina</span>
+                            <span class="badge-detox text-white text-xs font-bold px-3 py-1 rounded-full">Detox</span>
                         </div>
                         <div class="absolute top-4 right-4">
                             <span class="badge-kesehatan text-white text-xs font-bold px-3 py-1 rounded-full">Kesehatan</span>
@@ -1526,14 +1522,14 @@
                 </div>
 
                 <!-- Jamu Card 19: Jamu Lempuyang -->
-                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="kesehatan kecantikan">
+                <div class="jamu-card bg-white rounded-2xl shadow-xl overflow-hidden hover-lift fade-in" data-category="detox" data-name="Jamu Lempuyang">
                     <!-- Jamu image placeholder -->
-                    <div class="h-48 bg-[url('/assets/images/jamu/jamubrotowali.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative">
+                    <div class="h-48 bg-[url('/assets/images/jamu/jamu-lempuyang.webp')] bg-cover bg-center rounded-2xl shadow-xl flex items-center justify-center relative" alt="Gambar jamu lempuyang">
                         <div class="absolute top-4 left-4">
-                            <span class="badge-stamina text-white text-xs font-bold px-3 py-1 rounded-full">Stamina</span>
+                            <span class="badge-detox text-white text-xs font-bold px-3 py-1 rounded-full">Detox</span>
                         </div>
-                        <div class="absolute top-4 right-4">
-                            <span class="badge-kesehatan text-white text-xs font-bold px-3 py-1 rounded-full">Kesehatan</span>
+                        <div class="absolute top-4 left-4">
+                            <span class="badge-pencernaan text-white text-xs font-bold px-3 py-1 rounded-full">Pencernaan</span>
                         </div>
                     </div>
                     
@@ -2045,6 +2041,8 @@
                     </div>
                 </div>
                 <div class="text-center mt-6">
+
+                <!-- Fitur Pembatasan Card -->
                 <button id="show-more" class="bg-green-500 text-white px-6 py-2 rounded-lg hover:bg-green-600 transition">
                     Tampilkan Semua
                 </button>
@@ -2399,7 +2397,6 @@ mobileMenu.innerHTML = `
     <a href="sejarah.html" class="block text-green-700 hover:text-green-900 py-2">Sejarah Jamu</a>
     <a href="katalog.html" class="block text-green-700 hover:text-green-900 py-2">Katalog Jamu</a>
     <a href="pageai.html" class="block text-green-700 hover:text-green-900 py-2">Asisten AI</a>
-    <a href="#tentang" class="block text-green-700 hover:text-green-900 py-2">Tentang</a>
 `;
 
 navbar.appendChild(mobileMenu);
@@ -2641,7 +2638,7 @@ mobileMenuBtn.addEventListener('click', () => {
         ==================================== */
         document.addEventListener('DOMContentLoaded', function() {
             observeElements();
-            console.log('Katalog Jamu Indonesia - Website loaded successfully! 🌿');
+            console.log('Katalog Jamu Indonesia - Website loading sukses! 🌿');
         });
 
         /* ====================================

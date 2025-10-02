@@ -222,40 +222,111 @@
                     </div>
                 </div>
 
-                <!-- Right Content -->
-<div class="slide-in-right relative">
-  <div class="relative">
-    <div class="absolute inset-0 bg-gradient-to-br from-green-400 to-yellow-400 rounded-3xl transform rotate-6 opacity-20"></div>
+                <!-- Right Content - AI CTA (Mobile Responsive Fixed) -->
+<div class="slide-in-right relative w-full">
+    <div class="relative w-full">
+        <div class="absolute inset-0 bg-gradient-to-br from-green-400 to-yellow-400 rounded-3xl transform rotate-6 opacity-20"></div>
 
-    <div class="relative bg-white rounded-3xl p-8 shadow-2xl hover-lift">
-      <div class="text-center mb-6">
-        <div class="w-24 h-24 bg-gradient-to-br from-green-600 to-green-800 rounded-full mx-auto mb-4 flex items-center justify-center">
-          <span class="text-4xl">🤖</span>
+        <div class="relative bg-white rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-8 shadow-2xl hover-lift w-full">
+            <!-- AI Icon with Animation -->
+            <div class="text-center mb-4 md:mb-6">
+                <div class="w-16 h-16 md:w-24 md:h-24 bg-gradient-to-br from-green-600 to-green-800 rounded-full mx-auto mb-3 md:mb-4 flex items-center justify-center floating-animation relative">
+                    <span class="text-2xl md:text-4xl">🤖</span>
+                    <!-- Pulse indicator -->
+                    <span class="absolute -top-1 -right-1 flex h-3 w-3 md:h-4 md:w-4">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 md:h-4 md:w-4 bg-green-500"></span>
+                    </span>
+                </div>
+                
+                <!-- Attention-grabbing badge -->
+                <div class="inline-block bg-gradient-to-r from-yellow-400 to-orange-400 text-white px-2 py-1 md:px-3 md:py-1 rounded-full text-xs font-bold mb-2 md:mb-3 animate-pulse">
+                    CURCUMA AI
+                </div>
+                
+                <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-green-800 mb-2 px-2">
+                    Bingung Pilih Jamu yang Tepat?
+                </h3>
+                <p class="text-green-600 text-sm md:text-base leading-relaxed px-2">
+                    Cukup ceritakan keluhan Anda, CURCUMA AI akan merekomendasikan jamu tradisional yang paling cocok dalam hitungan detik!
+                </p>
+            </div>
+
+            <!-- Benefits List -->
+            <div class="space-y-2 md:space-y-3 mb-4 md:mb-6">
+                <div class="flex items-start space-x-2 md:space-x-3 p-2 md:p-3 bg-green-50 rounded-lg md:rounded-xl">
+                    <div class="w-7 h-7 md:w-8 md:h-8 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg class="w-3 h-3 md:w-4 md:h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <span class="text-green-800 font-semibold text-xs md:text-sm block">Analisis Instan</span>
+                        <p class="text-xs text-gray-600">Hasil dalam 10 detik</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start space-x-2 md:space-x-3 p-2 md:p-3 bg-yellow-50 rounded-lg md:rounded-xl">
+                    <div class="w-7 h-7 md:w-8 md:h-8 bg-yellow-600 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg class="w-3 h-3 md:w-4 md:h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <span class="text-green-800 font-semibold text-xs md:text-sm block">Resep Lengkap</span>
+                        <p class="text-xs text-gray-600">Bahan & cara membuat</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start space-x-2 md:space-x-3 p-2 md:p-3 bg-green-50 rounded-lg md:rounded-xl">
+                    <div class="w-7 h-7 md:w-8 md:h-8 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg class="w-3 h-3 md:w-4 md:h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <span class="text-green-800 font-semibold text-xs md:text-sm block">Berbasis Tradisi</span>
+                        <p class="text-xs text-gray-600">Resep turun-temurun</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <a href="ai.html" class="block w-full">
+                <button class="w-full bg-gradient-to-r from-green-600 to-green-700 text-white px-4 py-3 md:px-8 md:py-4 rounded-xl font-bold text-base md:text-lg hover:from-green-700 hover:to-green-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl relative overflow-hidden group">
+                    <!-- Shimmer effect -->
+                    <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent opacity-20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></span>
+                    
+                    <span class="relative flex items-center justify-center space-x-2">
+                        <span>Coba Konsultasi Sekarang !</span>
+                        <svg class="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
+                    </span>
+                </button>
+            </a>
+
+            <!-- Social Proof / Trust Indicator -->
+            <!-- <div class="mt-4 md:mt-5 pt-4 md:pt-5 border-t border-gray-200">
+                <div class="flex items-center justify-center space-x-2 text-xs md:text-sm text-gray-600">
+                    <div class="flex -space-x-2">
+                        <div class="w-6 h-6 md:w-8 md:h-8 bg-green-200 rounded-full border-2 border-white flex items-center justify-center text-xs">👤</div>
+                        <div class="w-6 h-6 md:w-8 md:h-8 bg-yellow-200 rounded-full border-2 border-white flex items-center justify-center text-xs">👤</div>
+                        <div class="w-6 h-6 md:w-8 md:h-8 bg-orange-200 rounded-full border-2 border-white flex items-center justify-center text-xs">👤</div>
+                        <div class="w-6 h-6 md:w-8 md:h-8 bg-green-300 rounded-full border-2 border-white flex items-center justify-center text-xs font-bold">+</div>
+                    </div>
+                    <p class="font-medium">
+                        <span class="text-green-700 font-bold">2.500+</span> sudah mencoba
+                    </p>
+                </div>
+            </div> -->
+
+            <!-- Secondary CTA Text -->
+            <p class="text-center text-xs text-gray-500 mt-2 md:mt-3 px-2">
+                Gratis 100% • Tanpa Registrasi • Privasi Terjaga
+            </p>
         </div>
-        <h3 class="text-xl font-semibold text-green-800 mb-2">Asisten Jamu AI</h3>
-        <p class="text-green-600 text-sm">Masukkan gejala yang kamu alami, dan dapatkan saran jamu tradisional</p>
-      </div>
-
-      <!-- Form AI -->
-      <form id="ai-form" class="space-y-4">
-        <textarea id="gejala-input" rows="3"
-          class="w-full border border-green-300 rounded-xl p-3 focus:ring-2 focus:ring-green-500 focus:outline-none"
-          placeholder="Contoh: Sakit kepala, badan meriang..."></textarea>
-
-        <button type="submit"
-          class="w-full bg-gradient-to-r from-green-600 to-green-700 text-white px-6 py-3 rounded-xl font-semibold hover:from-green-700 hover:to-green-800 transition-all">
-          Dapatkan Saran Jamu
-        </button>
-      </form>
-
-      <!-- Output AI -->
-      <div id="ai-response" class="mt-6 hidden bg-green-50 border-l-4 border-green-500 p-4 rounded-r-lg">
-        <p class="text-green-800 font-medium">
-           <strong>Saran Jamu:</strong> <span id="response-text">Tunggu sebentar, AI sedang memproses...</span>
-        </p>
-      </div>
     </div>
-  </div>
 </div>
 
             </div>
@@ -816,34 +887,34 @@
         });
 
         //Prototype dummy AI
-        const form = document.getElementById("ai-form");
-  const responseBox = document.getElementById("ai-response");
-  const responseText = document.getElementById("response-text");
+//         const form = document.getElementById("ai-form");
+//   const responseBox = document.getElementById("ai-response");
+//   const responseText = document.getElementById("response-text");
 
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const gejala = document.getElementById("gejala-input").value.trim();
+//   form.addEventListener("submit", (e) => {
+//     e.preventDefault();
+//     const gejala = document.getElementById("gejala-input").value.trim();
 
-    if (!gejala) {
-      responseText.textContent = "Tolong masukkan gejala dulu ya 🙏";
-      responseBox.classList.remove("hidden");
-      return;
-    }
+//     if (!gejala) {
+//       responseText.textContent = "Tolong masukkan gejala dulu ya 🙏";
+//       responseBox.classList.remove("hidden");
+//       return;
+//     }
 
-    // Dummy rule-based AI (contoh aja)
-    let saran = "Coba jamu beras kencur untuk menjaga stamina.";
-    if (gejala.includes("pusing") || gejala.includes("kepala")) {
-      saran = "Coba jamu kunyit asam, bagus untuk meredakan pusing dan menyegarkan tubuh.";
-    } else if (gejala.includes("batuk")) {
-      saran = "Coba jamu jahe hangat dengan madu untuk meredakan batuk.";
-    } else if (gejala.includes("pegal") || gejala.includes("letih")) {
-      saran = "Coba jamu beras kencur, cocok untuk mengurangi pegal dan menambah energi.";
-    }
+//     // Dummy rule-based AI (contoh aja)
+//     let saran = "Coba jamu beras kencur untuk menjaga stamina.";
+//     if (gejala.includes("pusing") || gejala.includes("kepala")) {
+//       saran = "Coba jamu kunyit asam, bagus untuk meredakan pusing dan menyegarkan tubuh.";
+//     } else if (gejala.includes("batuk")) {
+//       saran = "Coba jamu jahe hangat dengan madu untuk meredakan batuk.";
+//     } else if (gejala.includes("pegal") || gejala.includes("letih")) {
+//       saran = "Coba jamu beras kencur, cocok untuk mengurangi pegal dan menambah energi.";
+//     }
 
-    // Tampilkan hasil
-    responseText.textContent = saran;
-    responseBox.classList.remove("hidden");
-  });
+//     // Tampilkan hasil
+//     responseText.textContent = saran;
+//     responseBox.classList.remove("hidden");
+//   });
 
         /* ====================================
            ENHANCED HOVER EFFECTS
