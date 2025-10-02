@@ -1,0 +1,101 @@
+/* home.css */
+/* Gradient background khusus home */
+.home-gradient-bg {
+  background: linear-gradient(135deg, #065f46 0%, #059669 35%, #10b981 100%);
+}
+
+/* Animasi floating khusus home */
+.home-floating-animation {
+  animation: homeFloat 6s ease-in-out infinite;
+}
+
+.home-floating-delay {
+  animation: homeFloat 6s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.home-floating-slow {
+  animation: homeFloat 8s ease-in-out infinite;
+  animation-delay: 4s;
+}
+
+@keyframes homeFloat {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Slide animations khusus home */
+.home-slide-in-left {
+  animation: homeSlideInLeft 1s ease-out;
+}
+
+.home-slide-in-right {
+  animation: homeSlideInRight 1s ease-out;
+}
+
+.home-fade-in-up {
+  animation: homeFadeInUp 1s ease-out;
+}
+
+@keyframes homeSlideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes homeSlideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes homeFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pulse button animation */
+.pulse-btn {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+/* Herb background pattern */
+.herb-bg {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f59e0b' fill-opacity='0.1'%3E%3Cpath d='M20 20c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10zm0-18c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8z'/%3E%3C/g%3E%3C/svg%3E");
+}
