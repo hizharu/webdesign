@@ -1,0 +1,90 @@
+/* sejarah.css */
+/* Timeline styling */
+.timeline-line {
+  position: relative;
+}
+
+.timeline-line::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(to bottom, #059669, #10b981);
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  background: #059669;
+  border: 6px solid #f0fdf4;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.timeline-item:nth-child(even) .timeline-content-wrapper {
+  flex-direction: row-reverse;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  text-align: right;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  text-align: left;
+}
+
+/* Responsive timeline */
+@media (max-width: 768px) {
+  .timeline-line::before {
+    left: 30px;
+  }
+
+  .timeline-dot {
+    left: 30px;
+  }
+
+  .timeline-item .timeline-content-wrapper {
+    flex-direction: column !important;
+    margin-left: 60px;
+  }
+
+  .timeline-item .timeline-content {
+    text-align: left !important;
+    margin-bottom: 1rem;
+  }
+
+  .timeline-item .timeline-image {
+    max-width: 100%;
+  }
+}
+
+/* Historical card styling */
+.history-card {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-left: 4px solid #059669;
+}
+
+/* Era section styling */
+.era-section {
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+  border-radius: 20px;
+}
+
+/* Timeline image hover effects */
+.timeline-image {
+  transition: all 0.3s ease;
+}
+
+.timeline-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
