@@ -1,0 +1,60 @@
+/* ai-assistant.css */
+/* Typing animation untuk loading state */
+.typing-animation {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Gradient background khusus AI */
+.ai-gradient-bg {
+  background: linear-gradient(135deg, #065f46 0%, #059669 35%, #10b981 100%);
+}
+
+/* Slide animation khusus AI */
+.ai-slide-in-left {
+  animation: aiSlideInLeft 1s ease-out;
+}
+
+@keyframes aiSlideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Result card styling */
+.result-card {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border: 2px solid #bbf7d0;
+}
+
+/* Input focus states */
+.ai-input:focus {
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+/* Button hover effects khusus AI */
+.ai-primary-btn {
+  background: linear-gradient(135deg, #059669, #10b981);
+  transition: all 0.3s ease;
+}
+
+.ai-primary-btn:hover {
+  background: linear-gradient(135deg, #047857, #0d9468);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(5, 150, 105, 0.3);
+}

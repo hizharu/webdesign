@@ -1,0 +1,64 @@
+/* katalog.css */
+/* Filter button active state */
+.filter-btn.active {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(5, 150, 105, 0.3);
+}
+
+/* Card hover effects */
+.jamu-card {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.jamu-card:hover {
+  border-color: #10b981;
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Ingredient circle animations */
+.ingredient-circle {
+  transition: all 0.3s ease;
+}
+
+.ingredient-circle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Category badge colors */
+.badge-kesehatan {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.badge-kecantikan {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.badge-stamina {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.badge-pencernaan {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+}
+
+.badge-detox {
+  background: linear-gradient(135deg, #06b6d4, #0891b2);
+}
+
+/* Responsive adjustments khusus katalog */
+@media (max-width: 768px) {
+  .ingredient-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .ingredient-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
