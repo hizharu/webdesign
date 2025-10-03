@@ -6,7 +6,7 @@
 ==================================== */
 function animateCounters() {
   const counters = document.querySelectorAll('[id^="counter"]');
-  const values = ["1000+", "500+", "2000+"];
+  const values = ["1000+", "500+", "1300+"];
 
   counters.forEach((counter, index) => {
     let start = 0;
