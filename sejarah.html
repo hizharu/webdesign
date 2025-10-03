@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sejarah Jamu Indonesia</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sejarah.css">
     <script src="js/script.js"></script>
     <script src="js/sejarah.js"></script>
-    <style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+    <!-- <style>
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap");
 
         * {
@@ -93,7 +97,7 @@
                 text-align: left !important;
                 margin-bottom: 1rem;
             }
-            .timeline-item .timeline-image {
+            .timeline-item . {
                 max-width: 100%;
             }
         }
@@ -157,7 +161,7 @@
             transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
         }
-    </style>
+    </style> -->
 </head>
 <body class="bg-gradient-to-br from-green-50 via-yellow-50 to-orange-50 text-gray-800">
 
@@ -203,96 +207,105 @@
 
     <!-- Hero Section -->
     <section id="home" class="min-h-screen flex items-center relative overflow-hidden jamu-pattern">
-        <div class="absolute inset-0 gradient-bg opacity-5"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <!-- Left Content -->
-                <div class="slide-in-left">
-                    <h1 class="text-4xl md:text-6xl font-bold text-green-800 mb-6 leading-tight">
-                        Sejarah Jamu
-                        <span class="block">Perjalanan Panjang</span>
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-yellow-600">
-                            Warisan Nusantara
-                        </span>
-                    </h1>
-                    <p class="text-lg text-green-700 mb-8 leading-relaxed">
-                        Jamu sudah dikenal masyarakat Nusantara sejak ribuan tahun lalu. Bukti awalnya bisa dilihat pada relief Candi Borobudur yang menggambarkan kegiatan meracik ramuan herbal. Pada masa kerajaan, jamu bukan hanya digunakan untuk menjaga kesehatan, tetapi juga menjadi bagian dari tradisi keraton, khususnya bagi kalangan bangsawan dan keluarga kerajaan.
-                    </p>
+    <div class="absolute inset-0 gradient-bg opacity-5"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Left Content -->
+            <div class="slide-in-left">
+                <h1 class="text-4xl md:text-6xl font-bold text-green-800 mb-6 leading-tight">
+                    Sejarah Jamu
+                    <span class="block">Perjalanan Panjang</span>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-yellow-600">
+                        Warisan Nusantara
+                    </span>
+                </h1>
+                <p class="text-lg text-green-700 mb-8 leading-relaxed">
+                    Jamu sudah dikenal masyarakat Nusantara sejak ribuan tahun lalu. Bukti awalnya bisa dilihat pada relief Candi Borobudur yang menggambarkan kegiatan meracik ramuan herbal. Pada masa kerajaan, jamu bukan hanya digunakan untuk menjaga kesehatan, tetapi juga menjadi bagian dari tradisi keraton, khususnya bagi kalangan bangsawan dan keluarga kerajaan.
+                </p>
 
-                    <!-- Stats -->
-                    <div class="grid grid-cols-3 gap-6">
-                        <div class="text-center">
-                            <div class="text-2xl font-bold text-green-800" id="counter1">1000+</div>
-                            <div class="text-sm text-green-600">Tanaman Obat</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-2xl font-bold text-green-800" id="counter2">500+</div>
-                            <div class="text-sm text-green-600">Resep Jamu Di seluruh Indonesia</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-2xl font-bold text-green-800" id="counter3">2000+</div>
-                            <div class="text-sm text-green-600">Tahun Sejarah</div>
-                        </div>
+                <!-- Stats -->
+                <div class="grid grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-green-800" id="counter1">1000+</div>
+                        <div class="text-sm text-green-600">Tanaman Obat</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-green-800" id="counter2">500+</div>
+                        <div class="text-sm text-green-600">Resep Jamu Di seluruh Indonesia</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-green-800" id="counter3">2000+</div>
+                        <div class="text-sm text-green-600">Tahun Sejarah</div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Right Content -->
-                <div class="slide-in-right relative">
-                    <div class="relative">
-                        <div class="absolute inset-0 bg-gradient-to-br from-green-400 to-yellow-400 rounded-3xl transform rotate-6 opacity-20"></div>
-                        <div class="relative bg-white rounded-3xl p-8 shadow-2xl hover-lift">
-                            <div class="text-center mb-6">
-                                <div class="w-24 h-24 bg-gradient-to-br from-green-600 to-green-800 rounded-full mx-auto mb-4 flex items-center justify-center">
-                                    <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                                    </svg>
-                                </div>
-                                <h3 class="text-xl font-semibold text-green-800 mb-2">Warisan Budaya</h3>
-                                <p class="text-green-600 text-sm">Telusuri perjalanan panjang jamu dalam sejarah Indonesia</p>
+            <!-- Right Content - Gambar -->
+            <div class=" relative">
+                <div class="relative">
+                    <!-- Efek dekoratif latar belakang -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-green-400 to-yellow-400 rounded-3xl transform rotate-6 opacity-20"></div>
+                    
+                    <!-- Container gambar -->
+                    <div class="relative bg-white rounded-3xl p-4 shadow-2xl hover-lift overflow-hidden">
+                        <!-- Gambar utama -->
+                        <div class="relative rounded-2xl overflow-hidden mb-4">
+                            <img 
+                                src="assets/images/content/healthy-family.webp" 
+                                alt="Ramuan jamu tradisional Indonesia"
+                                class="w-full h-64 object-cover transition-transform duration-500 hover:scale-105"
+                                loading="lazy"
+                            >
+                            <!-- Overlay teks pada gambar -->
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                                <h3 class="text-white font-bold text-lg">Ramuan Tradisional Nusantara</h3>
+                                <p class="text-green-200 text-sm">Warisan budaya yang telah berusia ribuan tahun</p>
                             </div>
-
-                            <!-- Feature Cards -->
-                            <div class="space-y-4">
-                                <div class="flex items-center space-x-3 p-3 bg-green-50 rounded-xl">
-                                    <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
-                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                    </div>
-                                    <span class="text-green-800 font-medium">Ribuan Tahun Sejarah</span>
-                                </div>
-                                <div class="flex items-center space-x-3 p-3 bg-yellow-50 rounded-xl">
-                                    <div class="w-8 h-8 bg-yellow-600 rounded-full flex items-center justify-center">
-                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                    </div>
-                                    <span class="text-green-800 font-medium">Berbasis Kearifan Lokal</span>
-                                </div>
-                                <div class="flex items-center space-x-3 p-3 bg-green-50 rounded-xl">
-                                    <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
-                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                    </div>
-                                    <span class="text-green-800 font-medium">Teruji Secara Turun Temurun</span>
-                                </div>
+                        </div>
+                        
+                        <!-- Thumbnail gambar tambahan -->
+                        <div class="grid grid-cols-3 gap-3">
+                            <div class="rounded-lg overflow-hidden">
+                                <img 
+                                    src="assets/images/content/herb.jpg"
+                                    alt="Bahan jamu tradisional"
+                                    class="w-full h-20 object-cover transition-transform duration-300 hover:scale-110"
+                                    loading="lazy"
+                                >
                             </div>
+                             <div class="rounded-lg overflow-hidden">
+                                <img 
+                                    src="assets/images/content/jahe.jpg"
+                                    alt="Jamu dalam kehidupan sehari-hari"
+                                    class="w-full h-20 object-cover transition-transform duration-300 hover:scale-110"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="rounded-lg overflow-hidden">
+                                <img 
+                                    src="assets/images/content/jamu.jpg"
+                                    alt="Proses pembuatan jamu"
+                                    class="w-full h-20 object-cover transition-transform duration-300 hover:scale-110"
+                                    loading="lazy"
+                                >
+                            </div>
+                           
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Introduction Section -->
-    <section id="sejarah" class="py-16 jamu-pattern">
+    <section id="sejarah" class="py-16  bg-white-100 ">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-4xl mx-auto text-center fade-in">
                 <h2 class="font-serif text-3xl md:text-4xl font-bold text-green-800 mb-8">
                     Warisan Leluhur yang Tak Lekang Waktu
                 </h2>
-                <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
+                <div class="bg-white backdrop-blur-sm rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                     <p class="text-lg md:text-xl leading-relaxed text-gray-700 mb-6">
                         Jamu, sebagai warisan budaya Indonesia yang telah berusia ribuan tahun, merupakan sistem pengobatan tradisional yang menggunakan bahan-bahan alami dari alam Nusantara. Dari daun-daunan, akar-akaran, hingga rempah-rempah, jamu telah menjadi bagian tak terpisahkan dari kehidupan masyarakat Indonesia.
                     </p>
@@ -305,384 +318,394 @@
     </section>
 
     <!-- Timeline Section -->
-    <section id="timeline" class="py-20 bg-gradient-to-b from-green-50 to-yellow-50">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="font-serif text-3xl md:text-4xl font-bold text-center text-green-800 mb-16 fade-in">
-                Timeline Sejarah Jamu
-            </h2>
+   <section id="timeline" class="py-20 bg-gradient-to-b from-green-50 to-yellow-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-serif text-3xl md:text-4xl font-bold text-center text-green-800 mb-16 fade-in">
+            Timeline Sejarah Jamu
+        </h2>
+        
+        <div class="relative timeline-line max-w-6xl mx-auto">
             
-            <div class="relative timeline-line max-w-6xl mx-auto">
-                
-    <!-- Timeline Item 1: Prasejarah -->
-    <div class="timeline-item relative mb-24">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content-wrapper grid md:grid-cols-2 gap-8 items-center">
-            <div class="timeline-content bg-white rounded-2xl shadow-xl p-6 md:p-8 fade-in hover-lift">
-                <div class="bg-green-100 text-green-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
-                    Prasejarah - 2000 SM
-                </div>
-                <h3 class="font-serif text-xl md:text-2xl font-bold text-green-800 mb-4">Awal Mula Pengobatan Herbal</h3>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    Masyarakat Austronesia yang mendiami Nusantara mulai menggunakan tumbuhan obat untuk pengobatan. Pengetahuan ini diturunkan secara lisan dari generasi ke generasi.
-                </p>
-                <div class="bg-green-50 p-4 rounded-lg">
-                    <p class="text-sm text-green-800">
-                        🌱 Fondasi awal sistem pengobatan tradisional yang berkembang menjadi jamu
-                    </p>
-                </div>
-            </div>
-            <div class="timeline-image flex justify-center fade-in">
-                <div class="w-full max-w-md h-64 md:h-80 bg-gradient-to-br from-green-200 to-yellow-200 rounded-2xl shadow-xl overflow-hidden hover-lift">
-                    <div class="w-full h-full bg-[url('/assets/images/prasejarah.jpg')] bg-cover bg-center relative">
-                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
-                            <h4 class="font-serif text-lg font-bold mb-2">Era Prasejarah</h4>
-                            <p class="text-sm">Masyarakat Austronesia menggunakan tumbuhan obat</p>
+            <!-- Timeline Item 1: Prasejarah -->
+            <div class="timeline-item relative mb-24">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content-wrapper grid md:grid-cols-2 gap-8 items-center">
+                    <div class="timeline-content bg-white rounded-2xl shadow-xl p-6 md:p-8 fade-in hover-lift">
+                        <div class="bg-green-100 text-green-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
+                            Prasejarah - 2000 SM
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Timeline Item 2: Hindu-Buddha -->
-    <div class="timeline-item relative mb-24">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content-wrapper grid md:grid-cols-2 gap-8 items-center">
-            <div class="timeline-image flex justify-center fade-in md:order-1">
-                <div class="w-full max-w-md h-64 md:h-80 bg-gradient-to-br from-orange-200 to-red-200 rounded-2xl shadow-xl overflow-hidden hover-lift">
-                    <div class="w-full h-full bg-[url('/assets/images/erahindubudha.webp')] bg-cover bg-center relative">
-                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
-                            <h4 class="font-serif text-lg font-bold mb-2">Era Hindu-Buddha</h4>
-                            <p class="text-sm">Pengaruh Ayurveda dan pengobatan Tiongkok</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="timeline-content bg-white rounded-2xl shadow-xl p-6 md:p-8 fade-in hover-lift md:order-2">
-                <div class="bg-orange-100 text-orange-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
-                    400 - 1500 M
-                </div>
-                <h3 class="font-serif text-xl md:text-2xl font-bold text-green-800 mb-4">Pengaruh Ayurveda & Pengobatan Tiongkok</h3>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    Masuknya agama Hindu-Buddha membawa pengaruh sistem pengobatan Ayurveda dari India. Kontak perdagangan dengan Tiongkok juga memperkenalkan konsep pengobatan tradisional Tiongkok.
-                </p>
-                <p class="text-sm text-gray-600 italic mb-4">
-                    Di era ini, kerajaan-kerajaan seperti Majapahit dan Sriwijaya mulai mendokumentasikan resep-resep jamu dalam lontar dan prasasti.
-                </p>
-                <div class="bg-orange-50 p-4 rounded-lg">
-                    <p class="text-sm text-orange-800">
-                        📜 Perpaduan ini memperkaya khazanah pengobatan tradisional Nusantara
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Timeline Item 3: Keraton Jawa -->
-    <div class="timeline-item relative mb-24">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content-wrapper grid md:grid-cols-2 gap-8 items-center">
-            <div class="timeline-content bg-white rounded-2xl shadow-xl p-6 md:p-8 fade-in hover-lift">
-                <div class="bg-yellow-100 text-yellow-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
-                    1500 - 1800 M
-                </div>
-                <h3 class="font-serif text-xl md:text-2xl font-bold text-green-800 mb-4">Perkembangan di Keraton Jawa</h3>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    Keraton-keraton Jawa, terutama Mataram, Yogyakarta, dan Surakarta, mengembangkan sistem jamu yang lebih sistematis. Para tabib keraton menciptakan ramuan-ramuan khusus untuk keluarga kerajaan.
-                </p>
-                <div class="bg-yellow-50 p-4 rounded-lg">
-                    <p class="text-sm text-yellow-800 font-medium">
-                        📜 Naskah "Serat Centhini" dan "Serat Kawruh Bab Jampi-Jampi" menjadi dokumentasi penting jamu era ini.
-                    </p>
-                </div>
-            </div>
-            <div class="timeline-image flex justify-center fade-in">
-                <div class="w-full max-w-md h-64 md:h-80 bg-gradient-to-br from-yellow-200 to-orange-200 rounded-2xl shadow-xl overflow-hidden hover-lift">
-                    <div class="w-full h-full bg-[url('/assets/images/tekskuno.png')] bg-cover bg-center relative">
-                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
-                            <h4 class="font-serif text-lg font-bold mb-2">Era Keraton</h4>
-                            <p class="text-sm">Sistematisasi jamu di istana Jawa</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Timeline Item 4: Kolonial -->
-    <div class="timeline-item relative mb-24">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content-wrapper grid md:grid-cols-2 gap-8 items-center">
-            <div class="timeline-image flex justify-center fade-in md:order-1">
-                <div class="w-full max-w-md h-64 md:h-80 bg-gradient-to-br from-blue-200 to-indigo-200 rounded-2xl shadow-xl overflow-hidden hover-lift">
-                    <div class="w-full h-full bg-[url('/assets/images/erakolonial.jpg')] bg-cover bg-center relative">
-                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
-                            <h4 class="font-serif text-lg font-bold mb-2">Era Kolonial</h4>
-                            <p class="text-sm">Penelitian botani dan kebun raya</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="timeline-content bg-white rounded-2xl shadow-xl p-6 md:p-8 fade-in hover-lift md:order-2">
-                <div class="bg-blue-100 text-blue-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
-                    1800 - 1945 M
-                </div>
-                <h3 class="font-serif text-xl md:text-2xl font-bold text-green-800 mb-4">Masa Penjajahan Belanda</h3>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    Pemerintah kolonial Belanda mulai meneliti tumbuhan obat Nusantara. Kebun Raya Bogor didirikan pada 1817 untuk penelitian botani, termasuk tanaman obat.
-                </p>
-                <p class="text-sm text-gray-600 mb-4">
-                    Pada periode ini, mulai muncul produsen jamu skala kecil yang menjual ramuan dalam bentuk bubuk atau simplisia kering.
-                </p>
-                <div class="bg-blue-50 p-4 rounded-lg">
-                    <p class="text-sm text-blue-800">
-                        🌿 Penggunaan jamu oleh masyarakat pribumi tetap berlanjut secara tradisional
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Timeline Item 5: Kemerdekaan -->
-    <div class="timeline-item relative mb-24">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content-wrapper grid md:grid-cols-2 gap-8 items-center">
-            <div class="timeline-content bg-white rounded-2xl shadow-xl p-6 md:p-8 fade-in hover-lift">
-                <div class="bg-red-100 text-red-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
-                    1945 - 1970 M
-                </div>
-                <h3 class="font-serif text-xl md:text-2xl font-bold text-green-800 mb-4">Jamu di Awal Kemerdekaan</h3>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    Pasca kemerdekaan, pemerintah Indonesia mulai memberikan perhatian pada pengobatan tradisional. Jamu semakin populer sebagai alternatif pengobatan yang terjangkau bagi masyarakat.
-                </p>
-                <div class="bg-red-50 p-4 rounded-lg">
-                    <p class="text-sm text-red-800">
-                        🏭 Periode ini menandai awal industrialisasi jamu dengan munculnya pabrik-pabrik jamu pertama di Jawa.
-                    </p>
-                </div>
-            </div>
-            <div class="timeline-image flex justify-center fade-in">
-                <div class="w-full max-w-md h-64 md:h-80 bg-gradient-to-br from-red-200 to-pink-200 rounded-2xl shadow-xl overflow-hidden hover-lift">
-                    <div class="w-full h-full bg-[url('/assets/images/erakemerdekaan.jpg')] bg-cover bg-center relative">
-                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
-                            <h4 class="font-serif text-lg font-bold mb-2">Era Kemerdekaan</h4>
-                            <p class="text-sm">Industrialisasi jamu modern</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Timeline Item 6: Orde Baru -->
-    <div class="timeline-item relative mb-24">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content-wrapper grid md:grid-cols-2 gap-8 items-center">
-            <div class="timeline-image flex justify-center fade-in md:order-1">
-                <div class="w-full max-w-md h-64 md:h-80 bg-gradient-to-br from-purple-200 to-indigo-200 rounded-2xl shadow-xl overflow-hidden hover-lift">
-                    <div class="w-full h-full bg-[url('/assets/images/eraordebaru.webp')] bg-cover bg-center relative">
-                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
-                            <h4 class="font-serif text-lg font-bold mb-2">Era Orde Baru</h4>
-                            <p class="text-sm">Modernisasi dan standarisasi</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="timeline-content bg-white rounded-2xl shadow-xl p-6 md:p-8 fade-in hover-lift md:order-2">
-                <div class="bg-purple-100 text-purple-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
-                    1970 - 1998 M
-                </div>
-                <h3 class="font-serif text-xl md:text-2xl font-bold text-green-800 mb-4">Modernisasi dan Industrialisasi</h3>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    Era Orde Baru menandai modernisasi industri jamu. Perusahaan-perusahaan besar seperti Nyonya Meneer, Jamu Cap Jago, dan Air Mancur berkembang pesat. Pemerintah mulai mengatur standar produksi dan keamanan jamu.
-                </p>
-                <p class="text-sm text-gray-600 mb-4">
-                    Penelitian ilmiah tentang jamu juga mulai intensif dilakukan di berbagai universitas dan lembaga penelitian.
-                </p>
-                <div class="bg-purple-50 p-4 rounded-lg">
-                    <p class="text-sm text-purple-800 font-medium">
-                        🔬 Didirikannya Pusat Penelitian dan Pengembangan Farmasi (1975) menandai era penelitian jamu modern.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Timeline Item 7: Era Reformasi -->
-    <div class="timeline-item relative mb-24">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content-wrapper grid md:grid-cols-2 gap-8 items-center">
-            <div class="timeline-content bg-white rounded-2xl shadow-xl p-6 md:p-8 fade-in hover-lift">
-                <div class="bg-teal-100 text-teal-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
-                    1998 - 2010 M
-                </div>
-                <h3 class="font-serif text-xl md:text-2xl font-bold text-green-800 mb-4">Era Reformasi dan Standardisasi</h3>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    Pasca reformasi, regulasi jamu semakin ketat dengan dibentuknya BPOM (2001). Sistem sertifikasi CPOTB (Cara Pembuatan Obat Tradisional yang Baik) diberlakukan.
-                </p>
-                <p class="text-sm text-gray-600 mb-4">
-                    Jamu mulai diklasifikasikan menjadi tiga kategori: Jamu, Obat Herbal Terstandar (OHT), dan Fitofarmaka.
-                </p>
-                <div class="bg-teal-50 p-4 rounded-lg">
-                    <p class="text-sm text-teal-800">
-                        📋 Periode ini menandai meningkatnya minat penelitian farmakologi dan fitokimia terhadap tanaman obat Indonesia.
-                    </p>
-                </div>
-            </div>
-            <div class="timeline-image flex justify-center fade-in">
-                <div class="w-full max-w-md h-64 md:h-80 bg-gradient-to-br from-teal-200 to-cyan-200 rounded-2xl shadow-xl overflow-hidden hover-lift">
-                    <div class="w-full h-full bg-[url('/assets/images/erareformasi.webp')] bg-cover bg-center relative">
-                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
-                            <h4 class="font-serif text-lg font-bold mb-2">Era Reformasi</h4>
-                            <p class="text-sm">Regulasi dan standardisasi ketat</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Timeline Item 8: Era Digital -->
-    <div class="timeline-item relative mb-12">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content-wrapper grid md:grid-cols-2 gap-8 items-center">
-            <div class="timeline-image flex justify-center fade-in md:order-1">
-                <div class="w-full max-w-md h-64 md:h-80 bg-gradient-to-br from-emerald-200 to-green-200 rounded-2xl shadow-xl overflow-hidden hover-lift">
-                    <div class="w-full h-full bg-[url('/assets/images/eradigital.jpg')] bg-cover bg-center relative">
-                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
-                            <h4 class="font-serif text-lg font-bold mb-2">Era Digital</h4>
-                            <p class="text-sm">Transformasi teknologi modern</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="timeline-content bg-white rounded-2xl shadow-xl p-6 md:p-8 fade-in hover-lift md:order-2">
-                <div class="bg-emerald-100 text-emerald-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
-                    2010 - Sekarang
-                </div>
-                <h3 class="font-serif text-xl md:text-2xl font-bold text-green-800 mb-4">Jamu di Era Digital</h3>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    Era digital membawa transformasi besar pada industri jamu. E-commerce memudahkan distribusi, media sosial meningkatkan awareness, dan teknologi modern mendukung penelitian yang lebih canggih.
-                </p>
-                <div class="space-y-3">
-                    <div class="bg-emerald-50 p-3 rounded-lg">
-                        <p class="text-sm text-emerald-800 font-medium">
-                            📱 Aplikasi mobile untuk konsultasi jamu dan pengobatan tradisional
+                        <h3 class="font-serif text-xl md:text-2xl font-bold text-green-800 mb-4">Awal Mula Pengobatan Herbal</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Masyarakat Austronesia yang mendiami Nusantara mulai menggunakan tumbuhan obat untuk pengobatan. Pengetahuan ini diturunkan secara lisan dari generasi ke generasi.
                         </p>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <p class="text-sm text-green-800">
+                                <i class="fas fa-seedling mr-2"></i> Fondasi awal sistem pengobatan tradisional yang berkembang menjadi jamu
+                            </p>
+                        </div>
                     </div>
-                    <div class="bg-teal-50 p-3 rounded-lg">
-                        <p class="text-sm text-teal-800 font-medium">
-                            🧬 Penelitian genomik dan metabolomik tanaman obat Indonesia
-                        </p>
+                    <div class=" flex justify-center fade-in">
+                        <div class="w-full max-w-md h-64 md:h-80 bg-gradient-to-br from-green-200 to-yellow-200 rounded-2xl shadow-xl overflow-hidden hover-lift">
+                            <div class="w-full h-full bg-[url('/assets/images/prasejarah.jpg')] bg-cover bg-center relative">
+                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
+                                    <h4 class="font-serif text-lg font-bold mb-2">Era Prasejarah</h4>
+                                    <p class="text-sm">Masyarakat Austronesia menggunakan tumbuhan obat</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bg-cyan-50 p-3 rounded-lg">
-                        <p class="text-sm text-cyan-800 font-medium">
-                            🌍 Program "Saintifikasi Jamu" untuk validasi ilmiah
+                </div>
+            </div>
+
+            <!-- Timeline Item 2: Hindu-Buddha -->
+            <div class="timeline-item relative mb-24">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content-wrapper grid md:grid-cols-2 gap-8 items-center">
+                    <div class=" flex justify-center fade-in md:order-1">
+                        <div class="w-full max-w-md h-64 md:h-80 bg-gradient-to-br from-orange-200 to-red-200 rounded-2xl shadow-xl overflow-hidden hover-lift">
+                            <div class="w-full h-full bg-[url('/assets/images/jamu-era-hindu-budha.webp')] bg-cover bg-center relative">
+                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
+                                    <h4 class="font-serif text-lg font-bold mb-2">Era Hindu-Buddha</h4>
+                                    <p class="text-sm">Pengaruh Ayurveda dan pengobatan Tiongkok</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-content bg-white rounded-2xl shadow-xl p-6 md:p-8 fade-in hover-lift md:order-2">
+                        <div class="bg-orange-100 text-orange-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
+                            400 - 1500 M
+                        </div>
+                        <h3 class="font-serif text-xl md:text-2xl font-bold text-green-800 mb-4">Pengaruh Ayurveda & Pengobatan Tiongkok</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Masuknya agama Hindu-Buddha membawa pengaruh sistem pengobatan Ayurveda dari India. Kontak perdagangan dengan Tiongkok juga memperkenalkan konsep pengobatan tradisional Tiongkok.
                         </p>
+                        <p class="text-sm text-gray-600 italic mb-4">
+                            Di era ini, kerajaan-kerajaan seperti Majapahit dan Sriwijaya mulai mendokumentasikan resep-resep jamu dalam lontar dan prasasti.
+                        </p>
+                        <div class="bg-orange-50 p-4 rounded-lg">
+                            <p class="text-sm text-orange-800">
+                                <i class="fas fa-scroll mr-2"></i> Perpaduan ini memperkaya khazanah pengobatan tradisional Nusantara
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Item 3: Keraton Jawa -->
+            <div class="timeline-item relative mb-24">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content-wrapper grid md:grid-cols-2 gap-8 items-center">
+                    <div class="timeline-content bg-white rounded-2xl shadow-xl p-6 md:p-8 fade-in hover-lift">
+                        <div class="bg-yellow-100 text-yellow-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
+                            1500 - 1800 M
+                        </div>
+                        <h3 class="font-serif text-xl md:text-2xl font-bold text-green-800 mb-4">Perkembangan di Keraton Jawa</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Keraton-keraton Jawa, terutama Mataram, Yogyakarta, dan Surakarta, mengembangkan sistem jamu yang lebih sistematis. Para tabib keraton menciptakan ramuan-ramuan khusus untuk keluarga kerajaan.
+                        </p>
+                        <div class="bg-yellow-50 p-4 rounded-lg">
+                            <p class="text-sm text-yellow-800 font-medium">
+                                <i class="fas fa-book-open mr-2"></i> Naskah "Serat Centhini" dan "Serat Kawruh Bab Jampi-Jampi" menjadi dokumentasi penting jamu era ini.
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" flex justify-center fade-in">
+                        <div class="w-full max-w-md h-64 md:h-80 bg-gradient-to-br from-yellow-200 to-orange-200 rounded-2xl shadow-xl overflow-hidden hover-lift">
+                            <div class="w-full h-full bg-[url('/assets/images/tekskuno.png')] bg-cover bg-center relative">
+                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
+                                    <h4 class="font-serif text-lg font-bold mb-2">Era Keraton</h4>
+                                    <p class="text-sm">Sistematisasi jamu di istana Jawa</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Item 4: Kolonial -->
+            <div class="timeline-item relative mb-24">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content-wrapper grid md:grid-cols-2 gap-8 items-center">
+                    <div class=" flex justify-center fade-in md:order-1">
+                        <div class="w-full max-w-md h-64 md:h-80 bg-gradient-to-br from-blue-200 to-indigo-200 rounded-2xl shadow-xl overflow-hidden hover-lift">
+                            <div class="w-full h-full bg-[url('/assets/images/erakolonial.jpg')] bg-cover bg-center relative">
+                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
+                                    <h4 class="font-serif text-lg font-bold mb-2">Era Kolonial</h4>
+                                    <p class="text-sm">Penelitian botani dan kebun raya</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-content bg-white rounded-2xl shadow-xl p-6 md:p-8 fade-in hover-lift md:order-2">
+                        <div class="bg-blue-100 text-blue-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
+                            1800 - 1945 M
+                        </div>
+                        <h3 class="font-serif text-xl md:text-2xl font-bold text-green-800 mb-4">Masa Penjajahan Belanda</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Pemerintah kolonial Belanda mulai meneliti tumbuhan obat Nusantara. Kebun Raya Bogor didirikan pada 1817 untuk penelitian botani, termasuk tanaman obat.
+                        </p>
+                        <p class="text-sm text-gray-600 mb-4">
+                            Pada periode ini, mulai muncul produsen jamu skala kecil yang menjual ramuan dalam bentuk bubuk atau simplisia kering.
+                        </p>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <p class="text-sm text-blue-800">
+                                <i class="fas fa-leaf mr-2"></i> Penggunaan jamu oleh masyarakat pribumi tetap berlanjut secara tradisional
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Item 5: Kemerdekaan -->
+            <div class="timeline-item relative mb-24">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content-wrapper grid md:grid-cols-2 gap-8 items-center">
+                    <div class="timeline-content bg-white rounded-2xl shadow-xl p-6 md:p-8 fade-in hover-lift">
+                        <div class="bg-red-100 text-red-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
+                            1945 - 1970 M
+                        </div>
+                        <h3 class="font-serif text-xl md:text-2xl font-bold text-green-800 mb-4">Jamu di Awal Kemerdekaan</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Pasca kemerdekaan, pemerintah Indonesia mulai memberikan perhatian pada pengobatan tradisional. Jamu semakin populer sebagai alternatif pengobatan yang terjangkau bagi masyarakat.
+                        </p>
+                        <div class="bg-red-50 p-4 rounded-lg">
+                            <p class="text-sm text-red-800">
+                                <i class="fas fa-industry mr-2"></i> Periode ini menandai awal industrialisasi jamu dengan munculnya pabrik-pabrik jamu pertama di Jawa.
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" flex justify-center fade-in">
+                        <div class="w-full max-w-md h-64 md:h-80 bg-gradient-to-br from-red-200 to-pink-200 rounded-2xl shadow-xl overflow-hidden hover-lift">
+                            <div class="w-full h-full bg-[url('/assets/images/erakemerdekaan.jpg')] bg-cover bg-center relative">
+                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
+                                    <h4 class="font-serif text-lg font-bold mb-2">Era Kemerdekaan</h4>
+                                    <p class="text-sm">Industrialisasi jamu modern</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Item 6: Orde Baru -->
+            <div class="timeline-item relative mb-24">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content-wrapper grid md:grid-cols-2 gap-8 items-center">
+                    <div class=" flex justify-center fade-in md:order-1">
+                        <div class="w-full max-w-md h-64 md:h-80 bg-gradient-to-br from-purple-200 to-indigo-200 rounded-2xl shadow-xl overflow-hidden hover-lift">
+                            <div class="w-full h-full bg-[url('/assets/images/eraordebaru.webp')] bg-cover bg-center relative">
+                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
+                                    <h4 class="font-serif text-lg font-bold mb-2">Era Orde Baru</h4>
+                                    <p class="text-sm">Modernisasi dan standarisasi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-content bg-white rounded-2xl shadow-xl p-6 md:p-8 fade-in hover-lift md:order-2">
+                        <div class="bg-purple-100 text-purple-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
+                            1970 - 1998 M
+                        </div>
+                        <h3 class="font-serif text-xl md:text-2xl font-bold text-green-800 mb-4">Modernisasi dan Industrialisasi</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Era Orde Baru menandai modernisasi industri jamu. Perusahaan-perusahaan besar seperti Nyonya Meneer, Jamu Cap Jago, dan Air Mancur berkembang pesat. Pemerintah mulai mengatur standar produksi dan keamanan jamu.
+                        </p>
+                        <p class="text-sm text-gray-600 mb-4">
+                            Penelitian ilmiah tentang jamu juga mulai intensif dilakukan di berbagai universitas dan lembaga penelitian.
+                        </p>
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <p class="text-sm text-purple-800 font-medium">
+                                <i class="fas fa-microscope mr-2"></i> Didirikannya Pusat Penelitian dan Pengembangan Farmasi (1975) menandai era penelitian jamu modern.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Item 7: Era Reformasi -->
+            <div class="timeline-item relative mb-24">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content-wrapper grid md:grid-cols-2 gap-8 items-center">
+                    <div class="timeline-content bg-white rounded-2xl shadow-xl p-6 md:p-8 fade-in hover-lift">
+                        <div class="bg-teal-100 text-teal-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
+                            1998 - 2010 M
+                        </div>
+                        <h3 class="font-serif text-xl md:text-2xl font-bold text-green-800 mb-4">Era Reformasi dan Standardisasi</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Pasca reformasi, regulasi jamu semakin ketat dengan dibentuknya BPOM (2001). Sistem sertifikasi CPOTB (Cara Pembuatan Obat Tradisional yang Baik) diberlakukan.
+                        </p>
+                        <p class="text-sm text-gray-600 mb-4">
+                            Jamu mulai diklasifikasikan menjadi tiga kategori: Jamu, Obat Herbal Terstandar (OHT), dan Fitofarmaka.
+                        </p>
+                        <div class="bg-teal-50 p-4 rounded-lg">
+                            <p class="text-sm text-teal-800">
+                                <i class="fas fa-clipboard-check mr-2"></i> Periode ini menandai meningkatnya minat penelitian farmakologi dan fitokimia terhadap tanaman obat Indonesia.
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" flex justify-center fade-in">
+                        <div class="w-full max-w-md h-64 md:h-80 bg-gradient-to-br from-teal-200 to-cyan-200 rounded-2xl shadow-xl overflow-hidden hover-lift">
+                            <div class="w-full h-full bg-[url('/assets/images/erareformasi.webp')] bg-cover bg-center relative">
+                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
+                                    <h4 class="font-serif text-lg font-bold mb-2">Era Reformasi</h4>
+                                    <p class="text-sm">Regulasi dan standardisasi ketat</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Item 8: Era Digital -->
+            <div class="timeline-item relative mb-12">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content-wrapper grid md:grid-cols-2 gap-8 items-center">
+                    <div class=" flex justify-center fade-in md:order-1">
+                        <div class="w-full max-w-md h-64 md:h-80 bg-gradient-to-br from-emerald-200 to-green-200 rounded-2xl shadow-xl overflow-hidden hover-lift">
+                            <div class="w-full h-full bg-[url('/assets/images/jamu-era-digital.jpg')] bg-cover bg-center relative">
+                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
+                                    <h4 class="font-serif text-lg font-bold mb-2">Era Digital</h4>
+                                    <p class="text-sm">Transformasi teknologi modern</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-content bg-white rounded-2xl shadow-xl p-6 md:p-8 fade-in hover-lift md:order-2">
+                        <div class="bg-emerald-100 text-emerald-800 text-sm font-semibold px-4 py-2 rounded-full inline-block mb-4">
+                            2010 - Sekarang
+                        </div>
+                        <h3 class="font-serif text-xl md:text-2xl font-bold text-green-800 mb-4">Jamu di Era Digital</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Era digital membawa transformasi besar pada industri jamu. E-commerce memudahkan distribusi, media sosial meningkatkan awareness, dan teknologi modern mendukung penelitian yang lebih canggih.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="bg-emerald-50 p-3 rounded-lg">
+                                <p class="text-sm text-emerald-800 font-medium">
+                                    <i class="fas fa-mobile-alt mr-2"></i> Aplikasi mobile untuk konsultasi jamu dan pengobatan tradisional
+                                </p>
+                            </div>
+                            <div class="bg-teal-50 p-3 rounded-lg">
+                                <p class="text-sm text-teal-800 font-medium">
+                                    <i class="fas fa-dna mr-2"></i> Penelitian genomik dan metabolomik tanaman obat Indonesia
+                                </p>
+                            </div>
+                            <div class="bg-cyan-50 p-3 rounded-lg">
+                                <p class="text-sm text-cyan-800 font-medium">
+                                    <i class="fas fa-globe mr-2"></i> Program "Saintifikasi Jamu" untuk validasi ilmiah
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-        </div>
-    </section>
+</section>
 
     <!-- Impact Section -->
-    <section id="dampak" class="py-20 bg-gradient-to-br from-yellow-100 via-orange-100 to-red-100">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-5xl mx-auto">
-                <h2 class="font-serif text-3xl md:text-4xl font-bold text-center text-green-800 mb-16 fade-in">
-                    Dampak Jamu dalam Kehidupan Modern
-                </h2>
-                
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-6 md:p-8 transform hover:scale-105 transition-transform duration-300 fade-in hover-lift">
-                        <div class="text-4xl mb-6 text-center">🏥</div>
-                        <h3 class="font-serif text-xl font-bold text-green-800 mb-4 text-center">Kesehatan Masyarakat</h3>
-                        <p class="text-gray-700 text-center leading-relaxed">
-                            Jamu memberikan alternatif pengobatan yang terjangkau dan minim efek samping bagi masyarakat Indonesia, terutama untuk pencegahan penyakit dan peningkatan imunitas.
-                        </p>
-                        <div class="mt-4 bg-green-50 p-3 rounded-lg">
-                            <p class="text-sm text-green-800 text-center font-medium">
-                                ✅ 70% masyarakat Indonesia menggunakan jamu secara rutin
-                            </p>
-                        </div>
+   <section id="dampak" class="py-20 bg-gradient-to-br from-yellow-100 via-orange-100 to-red-100">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="font-serif text-3xl md:text-4xl font-bold text-center text-green-800 mb-16 fade-in">
+                Dampak Jamu dalam Kehidupan Modern
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-6 md:p-8 transform hover:scale-105 transition-transform duration-300 fade-in hover-lift">
+                    <div class="text-4xl mb-6 text-center text-green-600">
+                        <i class="fas fa-hospital-alt"></i>
                     </div>
-                    
-                    <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-6 md:p-8 transform hover:scale-105 transition-transform duration-300 fade-in hover-lift">
-                        <div class="text-4xl mb-6 text-center">💰</div>
-                        <h3 class="font-serif text-xl font-bold text-green-800 mb-4 text-center">Ekonomi Kreatif</h3>
-                        <p class="text-gray-700 text-center leading-relaxed">
-                            Industri jamu menyerap jutaan tenaga kerja dan berkontribusi triliunan rupiah terhadap PDB Indonesia, dari petani tanaman obat hingga industri modern.
-                        </p>
-                        <div class="mt-4 bg-yellow-50 p-3 rounded-lg">
-                            <p class="text-sm text-yellow-800 text-center font-medium">
-                                📈 Nilai industri jamu mencapai Rp 15 triliun per tahun
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-6 md:p-8 transform hover:scale-105 transition-transform duration-300 fade-in hover-lift">
-                        <div class="text-4xl mb-6 text-center">🌿</div>
-                        <h3 class="font-serif text-xl font-bold text-green-800 mb-4 text-center">Konservasi Alam</h3>
-                        <p class="text-gray-700 text-center leading-relaxed">
-                            Industri jamu mendorong pelestarian keanekaragaman hayati Indonesia dan pengembangan pertanian organik tanaman obat yang berkelanjutan.
-                        </p>
-                        <div class="mt-4 bg-green-50 p-3 rounded-lg">
-                            <p class="text-sm text-green-800 text-center font-medium">
-                                🌱 1.000+ spesies tanaman obat Indonesia terkonservasi
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Future Vision Section -->
-    <section id="masa-depan" class="py-20 bg-green-800 text-white">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-4xl mx-auto text-center fade-in">
-                <h2 class="font-serif text-3xl md:text-4xl font-bold mb-8">Masa Depan Jamu Indonesia</h2>
-                <p class="text-xl leading-relaxed mb-8 text-green-100">
-                    Dengan dukungan teknologi modern, penelitian ilmiah yang mendalam, dan komitmen pemerintah, jamu Indonesia berpotensi menjadi produk kesehatan global yang diakui dunia. Visi Indonesia sebagai "Pharmacy of the World" semakin nyata dengan kekayaan biodiversitas dan warisan pengetahuan tradisional yang tak ternilai.
-                </p>
-                
-                <!-- Future Goals -->
-                <div class="grid md:grid-cols-2 gap-8 mb-8">
-                    <div class="bg-green-700/50 backdrop-blur-sm rounded-2xl p-6 hover-lift">
-                        <div class="text-4xl mb-4">🔬</div>
-                        <h3 class="font-serif text-xl font-bold mb-3">Riset & Inovasi</h3>
-                        <p class="text-green-100">
-                            Pengembangan teknologi ekstraksi modern, penelitian fitofarmaka, dan validasi ilmiah untuk meningkatkan kualitas dan efektivitas jamu.
-                        </p>
-                    </div>
-                    <div class="bg-green-700/50 backdrop-blur-sm rounded-2xl p-6 hover-lift">
-                        <div class="text-4xl mb-4">🌍</div>
-                        <h3 class="font-serif text-xl font-bold mb-3">Pasar Global</h3>
-                        <p class="text-green-100">
-                            Ekspansi pasar internasional dengan sertifikasi internasional dan kemitraan strategis untuk memperkenalkan jamu ke seluruh dunia.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="bg-green-700/50 backdrop-blur-sm rounded-2xl p-8 hover-lift">
-                    <p class="text-lg text-green-100 italic">
-                        "Jamu bukan hanya warisan masa lalu, tetapi juga kunci masa depan kesehatan Indonesia dan dunia."
+                    <h3 class="font-serif text-xl font-bold text-green-800 mb-4 text-center">Kesehatan Masyarakat</h3>
+                    <p class="text-gray-700 text-center leading-relaxed">
+                        Jamu memberikan alternatif pengobatan yang terjangkau dan minim efek samping bagi masyarakat Indonesia, terutama untuk pencegahan penyakit dan peningkatan imunitas.
                     </p>
-                    <div class="mt-6 flex justify-center space-x-4">
-                        <div class="bg-yellow-500 text-green-800 px-4 py-2 rounded-full text-sm font-semibold">
-                            Target 2030: Ekspor $5 Miliar
-                        </div>
-                        <div class="bg-green-400 text-green-800 px-4 py-2 rounded-full text-sm font-semibold">
-                            10 Juta Petani Tanaman Obat
-                        </div>
+                    <div class="mt-4 bg-green-50 p-3 rounded-lg">
+                        <p class="text-sm text-green-800 text-center font-medium">
+                            <i class="fas fa-check-circle mr-2"></i> 70% masyarakat Indonesia menggunakan jamu secara rutin
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-6 md:p-8 transform hover:scale-105 transition-transform duration-300 fade-in hover-lift">
+                    <div class="text-4xl mb-6 text-center text-yellow-600">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-green-800 mb-4 text-center">Ekonomi Kreatif</h3>
+                    <p class="text-gray-700 text-center leading-relaxed">
+                        Industri jamu menyerap jutaan tenaga kerja dan berkontribusi triliunan rupiah terhadap PDB Indonesia, dari petani tanaman obat hingga industri modern.
+                    </p>
+                    <div class="mt-4 bg-yellow-50 p-3 rounded-lg">
+                        <p class="text-sm text-yellow-800 text-center font-medium">
+                            <i class="fas fa-chart-bar mr-2"></i> Nilai industri jamu mencapai Rp 15 triliun per tahun
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-6 md:p-8 transform hover:scale-105 transition-transform duration-300 fade-in hover-lift">
+                    <div class="text-4xl mb-6 text-center text-green-600">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-green-800 mb-4 text-center">Konservasi Alam</h3>
+                    <p class="text-gray-700 text-center leading-relaxed">
+                        Industri jamu mendorong pelestarian keanekaragaman hayati Indonesia dan pengembangan pertanian organik tanaman obat yang berkelanjutan.
+                    </p>
+                    <div class="mt-4 bg-green-50 p-3 rounded-lg">
+                        <p class="text-sm text-green-800 text-center font-medium">
+                            <i class="fas fa-seedling mr-2"></i> 1.000+ spesies tanaman obat Indonesia terkonservasi
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Future Vision Section -->
+<section id="masa-depan" class="py-20 bg-green-800 text-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center fade-in">
+            <h2 class="font-serif text-3xl md:text-4xl font-bold mb-8">Masa Depan Jamu Indonesia</h2>
+            <p class="text-xl leading-relaxed mb-8 text-green-100">
+                Dengan dukungan teknologi modern, penelitian ilmiah yang mendalam, dan komitmen pemerintah, jamu Indonesia berpotensi menjadi produk kesehatan global yang diakui dunia. Visi Indonesia sebagai "Pharmacy of the World" semakin nyata dengan kekayaan biodiversitas dan warisan pengetahuan tradisional yang tak ternilai.
+            </p>
+            
+            <!-- Future Goals -->
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div class="bg-green-700/50 backdrop-blur-sm rounded-2xl p-6 hover-lift">
+                    <div class="text-4xl mb-4 text-green-300">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-3">Riset & Inovasi</h3>
+                    <p class="text-green-100">
+                        Pengembangan teknologi ekstraksi modern, penelitian fitofarmaka, dan validasi ilmiah untuk meningkatkan kualitas dan efektivitas jamu.
+                    </p>
+                </div>
+                <div class="bg-green-700/50 backdrop-blur-sm rounded-2xl p-6 hover-lift">
+                    <div class="text-4xl mb-4 text-green-300">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-3">Pasar Global</h3>
+                    <p class="text-green-100">
+                        Ekspansi pasar internasional dengan sertifikasi internasional dan kemitraan strategis untuk memperkenalkan jamu ke seluruh dunia.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="bg-green-700/50 backdrop-blur-sm rounded-2xl p-8 hover-lift">
+                <p class="text-lg text-green-100 italic">
+                    "Jamu bukan hanya warisan masa lalu, tetapi juga kunci masa depan kesehatan Indonesia dan dunia."
+                </p>
+                <div class="mt-6 flex justify-center space-x-4">
+                    <div class="bg-yellow-500 text-green-800 px-4 py-2 rounded-full text-sm font-semibold">
+                        <i class="fas fa-bullseye mr-2"></i> Target 2030: Ekspor $5 Miliar
+                    </div>
+                    <div class="bg-green-400 text-green-800 px-4 py-2 rounded-full text-sm font-semibold">
+                        <i class="fas fa-users mr-2"></i> 10 Juta Petani Tanaman Obat
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="bg-green-900 text-white py-16">
@@ -784,135 +807,5 @@
     </div>
     </footer>
 
-    <!-- <script>
-        //JS UNTUK BAGIAN BURGER NAVBAR
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const navbar = document.getElementById('navbar');
-
-        // bikin elemen menu
-        const mobileMenu = document.createElement('div');
-        mobileMenu.className = 'absolute top-16 left-0 w-full md:hidden bg-white shadow-lg rounded-lg p-4 space-y-2 hidden';
-        mobileMenu.innerHTML = `
-            <a href="index.html" class="block text-green-700 hover:text-green-900 py-2">Beranda</a>
-            <a href="sejarah.html" class="block text-green-700 hover:text-green-900 py-2">Sejarah Jamu</a>
-            <a href="katalog.html" class="block text-green-700 hover:text-green-900 py-2">Katalog Jamu</a>
-            <a href="pageai.html" class="block text-green-700 hover:text-green-900 py-2">Asisten AI</a>
-        `;
-
-        navbar.appendChild(mobileMenu);
-
-        // toggle menu
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    // Close mobile menu if open
-                    mobileMenu.style.display = 'none';
-                }
-            });
-        });
-
-        // Intersection Observer for animations
-        function observeElements() {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
-                });
-            }, {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            });
-
-            document.querySelectorAll('.fade-in').forEach((el) => {
-                observer.observe(el);
-            });
-        }
-
-   
-
-        // Interactive timeline dots
-        document.querySelectorAll('.timeline-dot').forEach((dot, index) => {
-            dot.addEventListener('mouseenter', () => {
-                dot.style.transform = 'translateX(-50%) scale(1.3)';
-                dot.style.backgroundColor = '#10b981';
-            });
-            
-            dot.addEventListener('mouseleave', () => {
-                dot.style.transform = 'translateX(-50%) scale(1)';
-                dot.style.backgroundColor = '#059669';
-            });
-        });
-
-        // Parallax effect for floating elements
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const parallax = document.querySelectorAll('.floating-animation, .floating-delay');
-            const speed = 0.5;
-
-            parallax.forEach((element) => {
-                const yPos = -(scrolled * speed);
-                element.style.transform = `translateY(${yPos}px)`;
-            });
-        });
-
-        // Initialize animations when DOM is loaded
-        document.addEventListener('DOMContentLoaded', observeElements);
-
-        // Add loading animation
-        window.addEventListener('load', () => {
-            document.body.style.opacity = '0';
-            document.body.style.transition = 'opacity 0.5s ease-in-out';
-            setTimeout(() => {
-                document.body.style.opacity = '1';
-            }, 100);
-        });
-
-        // Counter animation for stats
-        function animateCounters() {
-            const counters = document.querySelectorAll('[id^="counter"]');
-            const values = ['1000+', '500+', '2000+'];
-            
-            counters.forEach((counter, index) => {
-                let start = 0;
-                const end = parseInt(values[index]);
-                const increment = end / 100;
-                const timer = setInterval(() => {
-                    start += increment;
-                    counter.textContent = Math.floor(start) + '+';
-                    if (start >= end) {
-                        counter.textContent = values[index];
-                        clearInterval(timer);
-                    }
-                }, 20);
-            });
-        }
-
-        // Trigger counter animation when visible
-        const statsSection = document.querySelector('#home');
-        const statsObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCounters();
-                    statsObserver.disconnect();
-                }
-            });
-        });
-        
-        if (statsSection) {
-            statsObserver.observe(statsSection);
-        }
-    </script> -->
 </body>
 </html>
