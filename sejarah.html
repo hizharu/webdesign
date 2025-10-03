@@ -6,12 +6,9 @@
     <title>Sejarah Jamu Indonesia</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sejarah.css">
-    <script src="js/script.js"></script>
-    <script src="js/sejarah.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
-  
 </head>
 <body class="bg-gradient-to-br from-green-50 via-yellow-50 to-orange-50 text-gray-800">
 
@@ -19,13 +16,14 @@
     <nav class="fixed w-full z-50 glass-effect transition-all duration-300  " id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
-                <div class="flex items-center space-x-2 slide-in-left">
+                <div class="flex items-center space-x-2 ">
                     <div class="flex items-center space-x-2">
-    <img src="/assets/images/logo-menjamu.png" alt="MenJamu Logo" class="w-10 h-10 object-contain">
-    <span class="text-xl font-bold text-green-600">MenJamu</span>
-</div>
+                    <img src="/assets/images/logo-menjamu.png" alt="MenJamu Logo" class="w-10 h-10 object-contain">
+                        <a href="index.html">
+                    <span class="text-xl font-bold text-green-600">MenJamu</span>
+                    </a>
                 </div>
-
+                </div>
                 <div class="hidden md:flex space-x-8">
                     <a href="index.html" 
                         class="py-2 border-b-2 border-transparent hover:border-green-700 text-green-700 hover:text-green-900 transition-colors">
@@ -44,8 +42,6 @@
                         Asisten AI
                     </a>
                 </div>
-
-
                 <button class="md:hidden text-green-800" id="mobile-menu-btn">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -54,7 +50,6 @@
             </div>
         </div>
     </nav>
-
     <!-- Hero Section -->
     <section id="home" class="min-h-screen flex items-center relative overflow-hidden jamu-pattern">
     <div class="absolute inset-0 gradient-bg opacity-5"></div>
@@ -90,7 +85,7 @@
                 </div>
             </div>
 
-            <!-- Right Content - Gambar -->
+            <!-- Right Content -->
             <div class=" relative">
                 <div class="relative">
                     <!-- Efek dekoratif latar belakang -->
@@ -558,104 +553,94 @@
 </section>
 
     <!-- Footer -->
-    <footer class="bg-green-900 text-white py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                
-                <!-- Brand Section -->
-                <div class="col-span-1">
-                    <div class="flex items-center space-x-2 mb-4">
-                        <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-                            <span class="text-green-800 font-bold">🌿</span>
-                        </div>
-                        <span class="text-xl font-bold">JamuSehat</span>
-                    </div>
-                    <p class="text-green-200 mb-6 leading-relaxed">
-                        Portal informasi terpercaya tentang tradisi jamu Indonesia. 
-                        Melestarikan warisan kesehatan nenek moyang untuk generasi modern.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-8 h-8 bg-green-700 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="w-8 h-8 bg-green-700 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.097.118.112.22.082.339-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="w-8 h-8 bg-green-700 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </a>
-                    </div>
+   <footer class="bg-green-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+            
+            <!-- Brand Section -->
+            <div class="col-span-1">
+                <div class="flex items-center space-x-2 mb-4">
+                    <span class="text-green-800 font-bold">
+                        <img src="/assets/images/logo-menjamu.png" alt="MenJamu Logo" class="w-10 h-10 object-contain">
+                    </span>
+                    <span class="text-xl font-bold">MenJamu</span>
                 </div>
-
-                <!-- Navigation Links -->
-                <div class="col-span-1">
-                    <h3 class="text-lg font-semibold mb-4">Navigasi</h3>
-                    <ul class="space-y-3 text-green-200">
-                        <li><a href="#home" class="hover:text-white transition-colors">Beranda</a></li>
-                        <li><a href="sejarah.html" class="hover:text-white transition-colors">Sejarah Jamu</a></li>
-                        <li><a href="katalog.html" class="hover:text-white transition-colors">Katalog Jamu</a></li>
-                        <li><a href="#mengapa-jamu" class="hover:text-white transition-colors">Mengapa Jamu</a></li>
-                    </ul>
-                </div>
-
-                <!-- Kategori Jamu -->
-                <div class="col-span-1">
-                    <h3 class="text-lg font-semibold mb-4">Kategori Jamu</h3>
-                    <ul class="space-y-3 text-green-200">
-                        <li><a href="katalog.html" class="hover:text-white transition-colors">Jamu Kesehatan</a></li>
-                        <li><a href="katalog.html" class="hover:text-white transition-colors">Jamu Kecantikan</a></li>
-                        <li><a href="katalog.html" class="hover:text-white transition-colors">Jamu Stamina</a></li>
-                        <li><a href="katalog.html" class="hover:text-white transition-colors">Jamu Pencernaan</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="col-span-1" id="contact">
-                    <h3 class="text-lg font-semibold mb-4">Kontak</h3>
-                    <div class="space-y-3 text-green-200 text-sm">
-                        <div class="flex items-center space-x-2">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                            <span>Indonesia</span>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 7.89a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                            </svg>
-                            <span>info@jamusehat.id</span>
-                        </div>
-                        <div class="mt-4">
-                            <p class="text-xs text-green-300">
-                                Website edukasi untuk melestarikan tradisi jamu Indonesia
-                            </p>
-                        </div>
-                    </div>
+                <p class="text-green-200 mb-6 leading-relaxed">
+                    Portal informasi terpercaya tentang tradisi jamu Indonesia. 
+                    Melestarikan warisan kesehatan nenek moyang untuk generasi modern.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-8 h-8 bg-green-700 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="w-8 h-8 bg-green-700 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
+                        <i class="fab fa-pinterest"></i>
+                    </a>
+                    <a href="#" class="w-8 h-8 bg-green-700 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
+                        <i class="fab fa-instagram"></i>
+                    </a>
                 </div>
             </div>
 
-            <div class="border-t border-green-800 pt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <p class="text-green-200 mb-4 md:mb-0 text-sm">
-                        © 2025 JamuSehat. Dibuat dengan cinta untuk melestarikan warisan budaya Indonesia.
-                    </p>
-                    <div class="flex space-x-6 text-green-200 text-sm">
-                        <a href="#" class="hover:text-white transition-colors">Kebijakan Privasi</a>
-                        <a href="#" class="hover:text-white transition-colors">Disclaimer</a>
-                        <a href="#" class="hover:text-white transition-colors">Kontak</a>
+            <!-- Navigation Links -->
+            <div class="col-span-1">
+                <h3 class="text-lg font-semibold mb-4">Navigasi</h3>
+                <ul class="space-y-3 text-green-200">
+                    <li><a href="#home" class="hover:text-white transition-colors">Beranda</a></li>
+                    <li><a href="sejarah.html" class="hover:text-white transition-colors">Sejarah Jamu</a></li>
+                    <li><a href="katalog.html" class="hover:text-white transition-colors">Katalog Jamu</a></li>
+                    <li><a href="pageai.html" class="hover:text-white transition-colors">Asisten AI</a></li>
+                </ul>
+            </div>
+
+            <!-- Kategori Jamu -->
+            <div class="col-span-1">
+                <h3 class="text-lg font-semibold mb-4">Kategori Jamu</h3>
+                <ul class="space-y-3 text-green-200">
+                    <li><a href="katalog.html" class="hover:text-white transition-colors">Jamu Kesehatan</a></li>
+                    <li><a href="katalog.html" class="hover:text-white transition-colors">Jamu Kecantikan</a></li>
+                    <li><a href="katalog.html" class="hover:text-white transition-colors">Jamu Stamina</a></li>
+                    <li><a href="katalog.html" class="hover:text-white transition-colors">Jamu Pencernaan</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-span-1" id="contact">
+                <h3 class="text-lg font-semibold mb-4">Kontak</h3>
+                <div class="space-y-3 text-green-200 text-sm">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Indonesia</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@jamusehat.id</span>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-xs text-green-300">
+                            Website edukasi untuk melestarikan tradisi jamu Indonesia
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </footer>
 
+        <div class="border-t border-green-800 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-green-200 mb-4 md:mb-0 text-sm">
+                    © 2025 JamuSehat. Dibuat dengan cinta untuk melestarikan warisan budaya Indonesia.
+                </p>
+                <div class="flex space-x-6 text-green-200 text-sm">
+                    <a href="#" class="hover:text-white transition-colors">Kebijakan Privasi</a>
+                    <a href="#" class="hover:text-white transition-colors">Disclaimer</a>
+                    <a href="#" class="hover:text-white transition-colors">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/sejarah.js"></script>
 </body>
 </html>

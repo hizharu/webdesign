@@ -14,20 +14,22 @@
 
 <body class="bg-gradient-to-br from-green-50 via-yellow-50 to-orange-50 overflow-x-hidden">
     <!-- Preloader -->
-<div id="preloader" class="fixed inset-0 bg-white flex items-center justify-center z-50">
-  <div class="animate-spin rounded-full h-12 w-12 border-t-4 border-green-700 border-solid"></div>
-</div>
+    <div id="preloader" class="fixed inset-0 bg-white flex items-center justify-center z-50">
+         <div class="animate-spin rounded-full h-12 w-12 border-t-4 border-green-700 border-solid"></div>
+    </div>
 
-<div id="content" class="hidden">
+    <div id="content" class="hidden">
     <!-- Navigation - Menggunakan design yang sama dengan halaman sejarah -->
     <nav class="bg-white fixed bg-white-/95 w-full z-50 " id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
                 <!-- Logo dan brand name -->
                <div class="flex items-center space-x-2">
-    <img src="/assets/images/logo-menjamu.png" alt="MenJamu Logo" class="w-10 h-10 object-contain">
-    <span class="text-xl font-bold text-green-600">MenJamu</span>
-</div>
+                    <img src="/assets/images/logo-menjamu.png" alt="MenJamu Logo" class="w-10 h-10 object-contain">
+                    <a href="index.html">
+                    <span class="text-xl font-bold text-green-600">MenJamu</span>
+                    </a>
+               </div>
 
                 <div class="hidden md:flex space-x-8">
                     <a href="index.html"
@@ -101,93 +103,90 @@
                 </div>
 
                 <!-- Right Content - AI CTA (Mobile Responsive Fixed) -->
-<div class=" relative w-full">
-    <div class="relative w-full">
-        
+                <div class=" relative w-full">
+                    <div class="relative w-full">
+                        
 
-        <div class="relative bg-white rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-8 shadow-2xl hover-lift w-full">
-            <!-- AI Icon with Animation -->
-            <div class="text-center mb-4 md:mb-6">
-                <div class="w-16 h-16 md:w-24 md:h-24 bg-gradient-to-br from-green-500 to-green-700 rounded-full mx-auto mb-3 md:mb-4 flex items-center justify-center floating-animation relative">
-                    <span class=" text-2xl  md:text-4xl">
-                        <p class="text-yellow-50"><i class="fas fa-robot"></i></p>
-                        </span>
-                        <!-- Pulse indicator -->
-                        <span class="absolute -top-1 -right-1 flex h-3 w-3 md:h-4 md:w-4">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-3 w-3 md:h-4 md:w-4 bg-green-500"></span>
-                        </span>
+                        <div class="relative bg-white rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-8 shadow-2xl hover-lift w-full">
+                            <!-- AI Icon with Animation -->
+                            <div class="text-center mb-4 md:mb-6">
+                                <div class="w-16 h-16 md:w-24 md:h-24 bg-gradient-to-br from-green-500 to-green-700 rounded-full mx-auto mb-3 md:mb-4 flex items-center justify-center floating-animation relative">
+                                    <span class=" text-2xl  md:text-4xl">
+                                        <p class="text-yellow-50"><i class="fas fa-robot"></i></p>
+                                        </span>
+                                        <!-- Pulse indicator -->
+                                        <span class="absolute -top-1 -right-1 flex h-3 w-3 md:h-4 md:w-4">
+                                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                                        <span class="relative inline-flex rounded-full h-3 w-3 md:h-4 md:w-4 bg-green-500"></span>
+                                        </span>
+                                </div>
+                                
+                                <!-- Attention-grabbing badge -->
+                                <div class="inline-block bg-gradient-to-r from-yellow-400 to-orange-400 text-white px-2 py-1 md:px-3 md:py-1 rounded-full text-xs font-bold mb-2 md:mb-3 ">
+                                    MENJAMU AI
+                                </div>
+                                
+                                <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-green-800 mb-2 px-2">
+                                    Bingung Pilih Jamu yang Tepat?
+                                </h3>
+                                <p class="text-green-600 text-sm md:text-base leading-relaxed px-2">
+                                    Cukup ceritakan keluhan Anda, MENJAMU AI akan merekomendasikan jamu tradisional yang paling cocok dalam hitungan detik!
+                                </p>
+                            </div>
+
+                            <!-- Benefits List -->
+                            <div class="space-y-2 md:space-y-3 mb-4 md:mb-6">
+                                <div class="flex items-start space-x-2 md:space-x-3 p-2 md:p-3 bg-green-50 rounded-lg md:rounded-xl">
+                                    <div class="w-7 h-7 md:w-8 md:h-8 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-bolt text-white text-xs md:text-sm"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <span class="text-green-800 font-semibold text-sm md:text-sm block">Analisis Instan</span>
+                                        <p class="text-sm text-gray-600">Hasil dalam 10 detik</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-2 md:space-x-3 p-2 md:p-3 bg-yellow-50 rounded-lg md:rounded-xl">
+                                    <div class="w-7 h-7 md:w-8 md:h-8 bg-yellow-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-check-circle text-white text-xs md:text-sm"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <span class="text-green-800 font-semibold text-xs md:text-sm block">Resep Lengkap</span>
+                                        <p class="text-sm text-gray-600">Bahan & cara membuat</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-2 md:space-x-3 p-2 md:p-3 bg-green-50 rounded-lg md:rounded-xl">
+                                    <div class="w-7 h-7 md:w-8 md:h-8 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-book text-white text-xs md:text-sm"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <span class="text-green-800 font-semibold text-xs md:text-sm block">Berbasis Tradisi</span>
+                                        <p class="text-sm text-gray-600">Resep turun-temurun</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CTA Button -->
+                            <a href="pageai.html" class="block w-full">
+                                <button class="w-full bg-gradient-to-r from-green-600 to-green-700 text-white px-4 py-3 md:px-8 md:py-4 rounded-xl font-bold text-base md:text-lg hover:from-green-700 hover:to-green-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl relative overflow-hidden group">
+                                    <!-- Shimmer effect -->
+                                    <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent opacity-20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></span>
+                                    
+                                    <span class="relative flex items-center justify-center space-x-2">
+                                        <span>Coba Konsultasi Sekarang </span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span>
+                                </button>
+                            </a>
+
+                            <!-- Secondary CTA Text -->
+                            <p class="text-center text-xs text-gray-500 mt-2 md:mt-3 px-2">
+                                Gratis 100% • Tanpa Registrasi • Privasi Terjaga
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                
-                <!-- Attention-grabbing badge -->
-                <div class="inline-block bg-gradient-to-r from-yellow-400 to-orange-400 text-white px-2 py-1 md:px-3 md:py-1 rounded-full text-xs font-bold mb-2 md:mb-3 ">
-                    MENJAMU AI
-                </div>
-                
-                <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-green-800 mb-2 px-2">
-                    Bingung Pilih Jamu yang Tepat?
-                </h3>
-                <p class="text-green-600 text-sm md:text-base leading-relaxed px-2">
-                    Cukup ceritakan keluhan Anda, MENJAMU AI akan merekomendasikan jamu tradisional yang paling cocok dalam hitungan detik!
-                </p>
-            </div>
-
-            <!-- Benefits List -->
-            <div class="space-y-2 md:space-y-3 mb-4 md:mb-6">
-                <div class="flex items-start space-x-2 md:space-x-3 p-2 md:p-3 bg-green-50 rounded-lg md:rounded-xl">
-                    <div class="w-7 h-7 md:w-8 md:h-8 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
-                        <i class="fas fa-bolt text-white text-xs md:text-sm"></i>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                        <span class="text-green-800 font-semibold text-sm md:text-sm block">Analisis Instan</span>
-                        <p class="text-sm text-gray-600">Hasil dalam 10 detik</p>
-                    </div>
-                </div>
-                
-                <div class="flex items-start space-x-2 md:space-x-3 p-2 md:p-3 bg-yellow-50 rounded-lg md:rounded-xl">
-                    <div class="w-7 h-7 md:w-8 md:h-8 bg-yellow-600 rounded-full flex items-center justify-center flex-shrink-0">
-                        <i class="fas fa-check-circle text-white text-xs md:text-sm"></i>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                        <span class="text-green-800 font-semibold text-xs md:text-sm block">Resep Lengkap</span>
-                        <p class="text-sm text-gray-600">Bahan & cara membuat</p>
-                    </div>
-                </div>
-                
-                <div class="flex items-start space-x-2 md:space-x-3 p-2 md:p-3 bg-green-50 rounded-lg md:rounded-xl">
-                    <div class="w-7 h-7 md:w-8 md:h-8 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
-                        <i class="fas fa-book text-white text-xs md:text-sm"></i>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                        <span class="text-green-800 font-semibold text-xs md:text-sm block">Berbasis Tradisi</span>
-                        <p class="text-sm text-gray-600">Resep turun-temurun</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CTA Button -->
-            <a href="pageai.html" class="block w-full">
-                <button class="w-full bg-gradient-to-r from-green-600 to-green-700 text-white px-4 py-3 md:px-8 md:py-4 rounded-xl font-bold text-base md:text-lg hover:from-green-700 hover:to-green-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl relative overflow-hidden group">
-                    <!-- Shimmer effect -->
-                    <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent opacity-20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></span>
-                    
-                    <span class="relative flex items-center justify-center space-x-2">
-                        <span>Coba Konsultasi Sekarang </span>
-                        <i class="fas fa-arrow-right"></i>
-                    </span>
-                </button>
-            </a>
-
-         
-
-            <!-- Secondary CTA Text -->
-            <p class="text-center text-xs text-gray-500 mt-2 md:mt-3 px-2">
-                Gratis 100% • Tanpa Registrasi • Privasi Terjaga
-            </p>
-        </div>
-    </div>
-</div>
-
             </div>
         </div>
     </section>
@@ -206,69 +205,69 @@
 
             <div class="grid md:grid-cols-3 gap-8">
             <!-- Sejarah Card -->
-<div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 hover-lift fade-in group">
-    <div class="w-16 h-16 bg-gradient-to-br from-green-600 to-green-800 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-        <i class="fas fa-scroll text-2xl text-white"></i>
-    </div>
-    <h3 class="font-serif text-2xl font-bold text-green-800 mb-4">Sejarah Jamu</h3>
-    <p class="text-green-600 mb-6 leading-relaxed">
-        Kenali akar tradisi jamu di Indonesia. Dari masa kerajaan kuno hingga era modern, 
-        telusuri perjalanan panjang warisan kesehatan nenek moyang.
-    </p>
-    <ul class="text-sm text-green-700 space-y-2 mb-6">
-        <li class="flex items-center"><i class="fas fa-circle text-green-500 text-xs mr-2"></i> Timeline sejarah lengkap</li>
-        <li class="flex items-center"><i class="fas fa-circle text-green-500 text-xs mr-2"></i> Era kerajaan hingga modern</li>
-        <li class="flex items-center"><i class="fas fa-circle text-green-500 text-xs mr-2"></i> Pengaruh budaya berbagai daerah</li>
-    </ul>
-    <a href="sejarah.html" class="inline-flex items-center text-green-700 font-semibold hover:text-green-900 transition-colors">
-        Pelajari Sejarahnya 
-        <i class="fas fa-chevron-right w-4 h-4 ml-2"></i>
-    </a>
-</div>
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 hover-lift fade-in group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-600 to-green-800 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-scroll text-2xl text-white"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-green-800 mb-4">Sejarah Jamu</h3>
+                    <p class="text-green-600 mb-6 leading-relaxed">
+                        Kenali akar tradisi jamu di Indonesia. Dari masa kerajaan kuno hingga era modern, 
+                        telusuri perjalanan panjang warisan kesehatan nenek moyang.
+                    </p>
+                    <ul class="text-sm text-green-700 space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-circle text-green-500 text-xs mr-2"></i> Timeline sejarah lengkap</li>
+                        <li class="flex items-center"><i class="fas fa-circle text-green-500 text-xs mr-2"></i> Era kerajaan hingga modern</li>
+                        <li class="flex items-center"><i class="fas fa-circle text-green-500 text-xs mr-2"></i> Pengaruh budaya berbagai daerah</li>
+                    </ul>
+                    <a href="sejarah.html" class="inline-flex items-center text-green-700 font-semibold hover:text-green-900 transition-colors">
+                        Pelajari Sejarahnya 
+                        <i class="fas fa-chevron-right w-4 h-4 ml-2"></i>
+                    </a>
+                </div>
 
-<!-- Katalog Card -->
-<div class="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl p-8 hover-lift fade-in group">
-    <div class="w-16 h-16 bg-gradient-to-br from-yellow-600 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-        <i class="fas fa-leaf text-2xl text-white"></i>
-    </div>
-    <h3 class="font-serif text-2xl font-bold text-green-800 mb-4">Katalog Jamu</h3>
-    <p class="text-green-600 mb-6 leading-relaxed">
-        Cari jamu sesuai kebutuhan tubuh Anda. Temukan manfaat, cara penyajian, 
-        dan bahan-bahan dari berbagai jenis jamu tradisional.
-    </p>
-    <ul class="text-sm text-green-700 space-y-2 mb-6">
-        <li class="flex items-center"><i class="fas fa-circle text-yellow-500 text-xs mr-2"></i> 50+ resep jamu tradisional</li>
-        <li class="flex items-center"><i class="fas fa-circle text-yellow-500 text-xs mr-2"></i> Filter berdasarkan kategori</li>
-        <li class="flex items-center"><i class="fas fa-circle text-yellow-500 text-xs mr-2"></i> Manfaat & cara penyajian</li>
-    </ul>
-    <a href="katalog.html" class="inline-flex items-center text-yellow-700 font-semibold hover:text-yellow-900 transition-colors">
-        Jelajahi Katalog 
-        <i class="fas fa-chevron-right w-4 h-4 ml-2"></i>
-    </a>
-</div>
+            <!-- Katalog Card -->
+                <div class="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl p-8 hover-lift fade-in group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-yellow-600 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-leaf text-2xl text-white"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-green-800 mb-4">Katalog Jamu</h3>
+                    <p class="text-green-600 mb-6 leading-relaxed">
+                        Cari jamu sesuai kebutuhan tubuh Anda. Temukan manfaat, cara penyajian, 
+                        dan bahan-bahan dari berbagai jenis jamu tradisional.
+                    </p>
+                    <ul class="text-sm text-green-700 space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-circle text-yellow-500 text-xs mr-2"></i> 50+ resep jamu tradisional</li>
+                        <li class="flex items-center"><i class="fas fa-circle text-yellow-500 text-xs mr-2"></i> Filter berdasarkan kategori</li>
+                        <li class="flex items-center"><i class="fas fa-circle text-yellow-500 text-xs mr-2"></i> Manfaat & cara penyajian</li>
+                    </ul>
+                    <a href="katalog.html" class="inline-flex items-center text-yellow-700 font-semibold hover:text-yellow-900 transition-colors">
+                        Jelajahi Katalog 
+                        <i class="fas fa-chevron-right w-4 h-4 ml-2"></i>
+                    </a>
+                </div>
 
-<!-- Tips Card -->
-<div class="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-2xl p-8 hover-lift fade-in group">
-    <div class="w-16 h-16 bg-gradient-to-br from-teal-600 to-cyan-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-        <i class="fas fa-lightbulb text-2xl text-white"></i>
-    </div>
-    <h3 class="font-serif text-2xl font-bold text-green-800 mb-4">Tips Penggunaan</h3>
-    <p class="text-green-600 mb-6 leading-relaxed">
-        Cara minum jamu yang tepat dan aman. Panduan lengkap waktu konsumsi, 
-        dosis yang tepat, dan hal-hal yang perlu diperhatikan.
-    </p>
-    <ul class="text-sm text-green-700 space-y-2 mb-6">
-        <li class="flex items-center"><i class="fas fa-circle text-teal-500 text-xs mr-2"></i> Waktu konsumsi terbaik</li>
-        <li class="flex items-center"><i class="fas fa-circle text-teal-500 text-xs mr-2"></i> Cara penyimpanan yang benar</li>
-        <li class="flex items-center"><i class="fas fa-circle text-teal-500 text-xs mr-2"></i> Panduan keamanan</li>
-    </ul>
-    <a href="katalog.html#tips" class="inline-flex items-center text-teal-700 font-semibold hover:text-teal-900 transition-colors">
-        Pelajari Tips 
-        <i class="fas fa-chevron-right w-4 h-4 ml-2"></i>
-    </a>
-</div>
+            <!-- Tips Card -->
+            <div class="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-2xl p-8 hover-lift fade-in group">
+                <div class="w-16 h-16 bg-gradient-to-br from-teal-600 to-cyan-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fas fa-lightbulb text-2xl text-white"></i>
+                </div>
+                <h3 class="font-serif text-2xl font-bold text-green-800 mb-4">Tips Penggunaan</h3>
+                <p class="text-green-600 mb-6 leading-relaxed">
+                    Cara minum jamu yang tepat dan aman. Panduan lengkap waktu konsumsi, 
+                    dosis yang tepat, dan hal-hal yang perlu diperhatikan.
+                </p>
+                <ul class="text-sm text-green-700 space-y-2 mb-6">
+                    <li class="flex items-center"><i class="fas fa-circle text-teal-500 text-xs mr-2"></i> Waktu konsumsi terbaik</li>
+                    <li class="flex items-center"><i class="fas fa-circle text-teal-500 text-xs mr-2"></i> Cara penyimpanan yang benar</li>
+                    <li class="flex items-center"><i class="fas fa-circle text-teal-500 text-xs mr-2"></i> Panduan keamanan</li>
+                </ul>
+                <a href="katalog.html#tips" class="inline-flex items-center text-teal-700 font-semibold hover:text-teal-900 transition-colors">
+                    Pelajari Tips 
+                    <i class="fas fa-chevron-right w-4 h-4 ml-2"></i>
+                </a>
             </div>
         </div>
+     </div>
     </section>
 
     <!-- Why Jamu Today Section -->
@@ -284,21 +283,21 @@
                 </p>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <!-- Left Content -->
-                  <div class="space-y-8">
-        <div class="flex items-start space-x-4 p-6 bg-white rounded-xl shadow-lg hover-lift fade-in">
-            <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
-                <i class="fas fa-leaf text-xl text-white"></i>
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <!-- Left Content -->
+                    <div class="space-y-8">
+                  <div class="flex items-start space-x-4 p-6 bg-white rounded-xl shadow-lg hover-lift fade-in">
+                    <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-leaf text-xl text-white"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-green-800 mb-2">100% Alami & Tradisional</h3>
+                    <p class="text-green-600">
+                        Jamu menggunakan bahan-bahan alami dari tanaman lokal Indonesia, 
+                        tanpa bahan kimia sintetis yang berpotensi menimbulkan efek samping berbahaya.
+                    </p>
+                </div>
             </div>
-            <div>
-                <h3 class="text-lg font-semibold text-green-800 mb-2">100% Alami & Tradisional</h3>
-                <p class="text-green-600">
-                    Jamu menggunakan bahan-bahan alami dari tanaman lokal Indonesia, 
-                    tanpa bahan kimia sintetis yang berpotensi menimbulkan efek samping berbahaya.
-                </p>
-            </div>
-        </div>
 
         <div class="flex items-start space-x-4 p-6 bg-white rounded-xl shadow-lg hover-lift fade-in">
             <div class="w-12 h-12 bg-yellow-600 rounded-full flex items-center justify-center flex-shrink-0">
@@ -495,20 +494,20 @@
     <a href="sejarah.html" class="inline-block bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition-colors">
         Pelajari Sejarah
     </a>
-</div>
+            </div>
 
-<div class="bg-white p-8 rounded-2xl shadow-xl hover-lift">
-    <div class="text-4xl mb-4 text-green-600">
-        <i class="fas fa-seedling"></i>
-    </div>
-    <h3 class="font-serif text-xl font-bold text-green-800 mb-3">Temukan Jamu Anda</h3>
-    <p class="text-green-600 mb-6">
-        Jelajahi katalog lengkap jamu tradisional sesuai kebutuhan kesehatan Anda
-    </p>
-    <a href="katalog.html" class="inline-block bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition-colors">
-        Lihat Katalog
-    </a>
-</div>
+            <div class="bg-white p-8 rounded-2xl shadow-xl hover-lift">
+                <div class="text-4xl mb-4 text-green-600">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <h3 class="font-serif text-xl font-bold text-green-800 mb-3">Temukan Jamu Anda</h3>
+                <p class="text-green-600 mb-6">
+                    Jelajahi katalog lengkap jamu tradisional sesuai kebutuhan kesehatan Anda
+                </p>
+                <a href="katalog.html" class="inline-block bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition-colors">
+                    Lihat Katalog
+                </a>
+            </div>
             </div>
 
             <div class="bg-gradient-to-r from-green-600 to-yellow-600 text-white p-8 rounded-2xl">
@@ -532,355 +531,93 @@
 
     <!-- Footer -->
     <footer class="bg-green-900 text-white py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                
-                <!-- Brand Section -->
-                <div class="col-span-1">
-                    <div class="flex items-center space-x-2 mb-4">
-                            <span class="text-green-800 font-bold">
-                                <img src="/assets/images/logo-menjamu.png" alt="MenJamu Logo" class="w-10 h-10 object-contain">
-                            </span>
-                        <span class="text-xl font-bold">JamuSehat</span>
-                    </div>
-                    <p class="text-green-200 mb-6 leading-relaxed">
-                        Portal informasi terpercaya tentang tradisi jamu Indonesia. 
-                        Melestarikan warisan kesehatan nenek moyang untuk generasi modern.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-8 h-8 bg-green-700 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="w-8 h-8 bg-green-700 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.097.118.112.22.082.339-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="w-8 h-8 bg-green-700 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </a>
-                    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+            
+            <!-- Brand Section -->
+            <div class="col-span-1">
+                <div class="flex items-center space-x-2 mb-4">
+                    <span class="text-green-800 font-bold">
+                        <img src="/assets/images/logo-menjamu.png" alt="MenJamu Logo" class="w-10 h-10 object-contain">
+                    </span>
+                    <span class="text-xl font-bold">MenJamu</span>
                 </div>
-
-                <!-- Navigation Links -->
-                <div class="col-span-1">
-                    <h3 class="text-lg font-semibold mb-4">Navigasi</h3>
-                    <ul class="space-y-3 text-green-200">
-                        <li><a href="#home" class="hover:text-white transition-colors">Beranda</a></li>
-                        <li><a href="sejarah.html" class="hover:text-white transition-colors">Sejarah Jamu</a></li>
-                        <li><a href="katalog.html" class="hover:text-white transition-colors">Katalog Jamu</a></li>
-                        <li><a href="#mengapa-jamu" class="hover:text-white transition-colors">Mengapa Jamu</a></li>
-                    </ul>
-                </div>
-
-                <!-- Kategori Jamu -->
-                <div class="col-span-1">
-                    <h3 class="text-lg font-semibold mb-4">Kategori Jamu</h3>
-                    <ul class="space-y-3 text-green-200">
-                        <li><a href="katalog.html" class="hover:text-white transition-colors">Jamu Kesehatan</a></li>
-                        <li><a href="katalog.html" class="hover:text-white transition-colors">Jamu Kecantikan</a></li>
-                        <li><a href="katalog.html" class="hover:text-white transition-colors">Jamu Stamina</a></li>
-                        <li><a href="katalog.html" class="hover:text-white transition-colors">Jamu Pencernaan</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="col-span-1" id="contact">
-                    <h3 class="text-lg font-semibold mb-4">Kontak</h3>
-                    <div class="space-y-3 text-green-200 text-sm">
-                        <div class="flex items-center space-x-2">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                            <span>Indonesia</span>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 7.89a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                            </svg>
-                            <span>info@jamusehat.id</span>
-                        </div>
-                        <div class="mt-4">
-                            <p class="text-xs text-green-300">
-                                Website edukasi untuk melestarikan tradisi jamu Indonesia
-                            </p>
-                        </div>
-                    </div>
+                <p class="text-green-200 mb-6 leading-relaxed">
+                    Portal informasi terpercaya tentang tradisi jamu Indonesia. 
+                    Melestarikan warisan kesehatan nenek moyang untuk generasi modern.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-8 h-8 bg-green-700 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="w-8 h-8 bg-green-700 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
+                        <i class="fab fa-pinterest"></i>
+                    </a>
+                    <a href="#" class="w-8 h-8 bg-green-700 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
+                        <i class="fab fa-instagram"></i>
+                    </a>
                 </div>
             </div>
 
-            <div class="border-t border-green-800 pt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <p class="text-green-200 mb-4 md:mb-0 text-sm">
-                        © 2025 JamuSehat. Dibuat dengan cinta untuk melestarikan warisan budaya Indonesia.
-                    </p>
-                    <div class="flex space-x-6 text-green-200 text-sm">
-                        <a href="#" class="hover:text-white transition-colors">Kebijakan Privasi</a>
-                        <a href="#" class="hover:text-white transition-colors">Disclaimer</a>
-                        <a href="#" class="hover:text-white transition-colors">Kontak</a>
+            <!-- Navigation Links -->
+            <div class="col-span-1">
+                <h3 class="text-lg font-semibold mb-4">Navigasi</h3>
+                <ul class="space-y-3 text-green-200">
+                    <li><a href="#home" class="hover:text-white transition-colors">Beranda</a></li>
+                    <li><a href="sejarah.html" class="hover:text-white transition-colors">Sejarah Jamu</a></li>
+                    <li><a href="katalog.html" class="hover:text-white transition-colors">Katalog Jamu</a></li>
+                    <li><a href="pageai.html" class="hover:text-white transition-colors">Asisten AI</a></li>
+                </ul>
+            </div>
+
+            <!-- Kategori Jamu -->
+            <div class="col-span-1">
+                <h3 class="text-lg font-semibold mb-4">Kategori Jamu</h3>
+                <ul class="space-y-3 text-green-200">
+                    <li><a href="katalog.html" class="hover:text-white transition-colors">Jamu Kesehatan</a></li>
+                    <li><a href="katalog.html" class="hover:text-white transition-colors">Jamu Kecantikan</a></li>
+                    <li><a href="katalog.html" class="hover:text-white transition-colors">Jamu Stamina</a></li>
+                    <li><a href="katalog.html" class="hover:text-white transition-colors">Jamu Pencernaan</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-span-1" id="contact">
+                <h3 class="text-lg font-semibold mb-4">Kontak</h3>
+                <div class="space-y-3 text-green-200 text-sm">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Indonesia</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@jamusehat.id</span>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-xs text-green-300">
+                            Website edukasi untuk melestarikan tradisi jamu Indonesia
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="border-t border-green-800 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-green-200 mb-4 md:mb-0 text-sm">
+                    © 2025 JamuSehat. Dibuat dengan cinta untuk melestarikan warisan budaya Indonesia.
+                </p>
+                <div class="flex space-x-6 text-green-200 text-sm">
+                    <a href="#" class="hover:text-white transition-colors">Kebijakan Privasi</a>
+                    <a href="#" class="hover:text-white transition-colors">Disclaimer</a>
+                    <a href="#" class="hover:text-white transition-colors">Kontak</a>
+                </div>
+            </div>
+        </div>
     </div>
-    </footer>
+</footer>
 
-    <script>
-        /* ====================================
-           MOBILE MENU FUNCTIONALITY
-           Handles responsive navigation menu
-        ==================================== */
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const navbar = document.getElementById('navbar');
-
-        // bikin elemen menu
-        const mobileMenu = document.createElement('div');
-        mobileMenu.className = 'absolute top-16 left-0 w-full md:hidden bg-white shadow-lg rounded-lg p-4 space-y-2 hidden';
-        mobileMenu.innerHTML = `
-            <a href="index.html" class="block px-4 py-2 text-green-800 hover:bg-green-100">Beranda</a>
-            <a href="sejarah.html" class="block px-4 py-2 text-green-800 hover:bg-green-100">Sejarah Jamu</a>
-            <a href="katalog.html" class="block px-4 py-2 text-green-800 hover:bg-green-100">Katalog Jamu</a>
-            <a href="pageai.html" class="block px-4 py-2 text-green-800 hover:bg-green-100">Asisten AI</a>
-        `;
-
-        navbar.appendChild(mobileMenu);
-
-        // toggle menu
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        /* ====================================
-           NAVBAR SCROLL EFFECT
-           Changes navbar appearance on scroll
-        ==================================== */
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('bg-white/95', 'shadow-lg');
-                navbar.classList.remove('glass-effect');
-            } else {
-                navbar.classList.remove('bg-white/95', 'shadow-lg');
-                navbar.classList.add('glass-effect');
-            }
-        });
-
-        /* ====================================
-           SMOOTH SCROLLING FOR NAVIGATION
-           Enables smooth scroll for anchor links
-        ==================================== */
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    // Close mobile menu
-                    mobileMenu.style.display = 'none';
-                }
-            });
-        });
-
-        /* ====================================
-           INTERSECTION OBSERVER FOR ANIMATIONS
-           Handles fade-in animations when scrolling
-        ==================================== */
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    
-                    // Handle statistics animation
-                    if (entry.target.id && entry.target.id.startsWith('stat')) {
-                        animateStatistic(entry.target);
-                    }
-                }
-            });
-        }, observerOptions);
-
-        /* ====================================
-           STATISTICS ANIMATION
-           Animates the counting of statistics
-        ==================================== */
-        function animateStatistic(element) {
-            const finalValue = element.textContent;
-            const numericValue = parseInt(finalValue.replace(/\D/g, ''));
-            const suffix = finalValue.replace(/[\d]/g, '');
-            
-            let currentValue = 0;
-            const increment = Math.ceil(numericValue / 60);
-            const duration = 2000;
-            const stepTime = duration / (numericValue / increment);
-
-            const timer = setInterval(() => {
-                currentValue += increment;
-                if (currentValue >= numericValue) {
-                    element.textContent = finalValue;
-                    clearInterval(timer);
-                } else {
-                    element.textContent = currentValue + suffix;
-                }
-            }, stepTime);
-        }
-
-        /* ====================================
-           INITIALIZE OBSERVERS
-           Start observing elements for animations
-        ==================================== */
-        document.querySelectorAll('.fade-in, [id^="stat"]').forEach((element) => {
-            observer.observe(element);
-        });
-
-        /* ====================================
-           PARALLAX EFFECT
-           Subtle parallax movement for floating elements
-        ==================================== */
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const parallaxElements = document.querySelectorAll('.floating-animation, .floating-delay, .floating-slow');
-            
-            parallaxElements.forEach((element, index) => {
-                const speed = 0.2 + (index * 0.1);
-                const yPos = -(scrolled * speed);
-                element.style.transform = `translateY(${yPos}px)`;
-            });
-        });
-
-        //Prototype dummy AI
-//         const form = document.getElementById("ai-form");
-//   const responseBox = document.getElementById("ai-response");
-//   const responseText = document.getElementById("response-text");
-
-//   form.addEventListener("submit", (e) => {
-//     e.preventDefault();
-//     const gejala = document.getElementById("gejala-input").value.trim();
-
-//     if (!gejala) {
-//       responseText.textContent = "Tolong masukkan gejala dulu ya 🙏";
-//       responseBox.classList.remove("hidden");
-//       return;
-//     }
-
-//     // Dummy rule-based AI (contoh aja)
-//     let saran = "Coba jamu beras kencur untuk menjaga stamina.";
-//     if (gejala.includes("pusing") || gejala.includes("kepala")) {
-//       saran = "Coba jamu kunyit asam, bagus untuk meredakan pusing dan menyegarkan tubuh.";
-//     } else if (gejala.includes("batuk")) {
-//       saran = "Coba jamu jahe hangat dengan madu untuk meredakan batuk.";
-//     } else if (gejala.includes("pegal") || gejala.includes("letih")) {
-//       saran = "Coba jamu beras kencur, cocok untuk mengurangi pegal dan menambah energi.";
-//     }
-
-//     // Tampilkan hasil
-//     responseText.textContent = saran;
-//     responseBox.classList.remove("hidden");
-//   });
-
-        /* ====================================
-           ENHANCED HOVER EFFECTS
-           Additional interactions for better UX
-        ==================================== */
-        document.querySelectorAll('.hover-lift').forEach((element) => {
-            element.addEventListener('mouseenter', () => {
-                element.style.transform = 'translateY(-8px) scale(1.02)';
-            });
-            
-            element.addEventListener('mouseleave', () => {
-                element.style.transform = 'translateY(0) scale(1)';
-            });
-        });
-
-        /* ====================================
-           PAGE LOADING ANIMATION
-           Smooth page entrance effect
-        ==================================== */
-        window.addEventListener('load', () => {
-            document.body.style.opacity = '0';
-            document.body.style.transition = 'opacity 0.6s ease-in-out';
-            
-            setTimeout(() => {
-                document.body.style.opacity = '1';
-            }, 100);
-        });
-
-        /* ====================================
-           INGREDIENT HOVER EFFECTS
-           Interactive herb ingredient displays
-        ==================================== */
-        document.querySelectorAll('[class*="text-center p-4"]').forEach((ingredient) => {
-            if (ingredient.querySelector('.text-3xl')) {
-                ingredient.addEventListener('mouseenter', () => {
-                    ingredient.style.transform = 'scale(1.05) rotate(2deg)';
-                });
-                
-                ingredient.addEventListener('mouseleave', () => {
-                    ingredient.style.transform = 'scale(1) rotate(0deg)';
-                });
-            }
-        });
-
-        /* ====================================
-           CONSOLE WELCOME MESSAGE
-           Fun easter egg for developers
-        ==================================== */
-        console.log(`
-        🌿 Selamat datang di JamuSehat! 🌿
-        
-        Website ini dibuat untuk melestarikan tradisi jamu Indonesia.
-        Terima kasih telah mengunjungi warisan budaya Nusantara!
-        
-        💚 Salam sehat alami! 💚
-        `);
-        
-        /* ====================================
-           ACCESSIBILITY IMPROVEMENTS
-           Better keyboard navigation and focus management
-        ==================================== */
-        document.addEventListener('keydown', (e) => {
-            // Close mobile menu on Escape key
-            if (e.key === 'Escape' && mobileMenu.style.display !== 'none') {
-                mobileMenu.style.display = 'none';
-            }
-        });
-
-        // tunggu sampai halaman selesai loading
-        window.addEventListener("load", () => {
-        const preloader = document.getElementById("preloader");
-        const content = document.getElementById("content");
-
-        preloader.style.display = "none";  // sembunyikan loader
-        content.classList.remove("hidden"); // tampilkan konten
-
-        // trigger animasi elemen-elemen dengan fade-in
-        document.querySelectorAll(".fade-in").forEach(el => {
-            setTimeout(() => el.classList.add("show"), 100);
-        });
-        });
-
-        // Focus management for better accessibility
-        const focusableElements = document.querySelectorAll('a, button, input, textarea, select');
-        focusableElements.forEach(element => {
-            element.addEventListener('focus', () => {
-                // element.style.outline = '2px solid #10b981';
-                // element.style.outlineOffset = '2px';
-            });
-            
-            element.addEventListener('blur', () => {
-                element.style.outline = 'none';
-            });
-        });
-    </script>
+    <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
