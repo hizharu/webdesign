@@ -9,155 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/katalog.js"></script>
-    <!-- <style>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap");
 
-        * {
-            font-family: "Poppins", sans-serif;
-        }
-        
-        .font-serif {
-            font-family: 'Merriweather', serif;
-        }
-        
-        /* Glass morphism effect untuk navbar */
-        .glass-effect {
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        /* Pattern background untuk hero section */
-        .jamu-pattern {
-            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23059669' fill-opacity='0.05'%3E%3Cpath d='M30 30c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20zm15 0c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        }
-        
-        /* Animasi floating untuk elemen dekoratif */
-        .floating-animation {
-            animation: float 3s ease-in-out infinite;
-        }
-        
-        .floating-delay {
-            animation: float 3s ease-in-out infinite;
-            animation-delay: 1.5s;
-        }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-        }
-        
-        /* Animasi fade-in untuk scroll animations */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s ease-out;
-        }
-        
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-        /* Slide animations */
-        .slide-in-left {
-            opacity: 0;
-            transform: translateX(-50px);
-            animation: slideInLeft 1s ease-out forwards;
-        }
-        
-        .slide-in-right {
-            opacity: 0;
-            transform: translateX(50px);
-            animation: slideInRight 1s ease-out forwards;
-        }
-        
-        @keyframes slideInLeft {
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-        
-        @keyframes slideInRight {
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-        
-        /* Hover lift effect untuk cards */
-        .hover-lift {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .hover-lift:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-        }
-        
-        /* Filter button active state */
-        .filter-btn.active {
-            background: linear-gradient(135deg, #059669 0%, #10b981 100%);
-            color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(5, 150, 105, 0.3);
-        }
-        
-        /* Card hover effects */
-        .jamu-card {
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-        }
-        
-        .jamu-card:hover {
-            border-color: #10b981;
-            transform: translateY(-8px);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-        }
-        
-        /* Ingredient circle animations */
-        .ingredient-circle {
-            transition: all 0.3s ease;
-        }
-        
-        .ingredient-circle:hover {
-            transform: scale(1.1);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        }
-        
-        /* Gradient backgrounds */
-        .gradient-bg {
-            background: linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%);
-        }
-        
-        /* Category badge colors */
-        .badge-kesehatan { background: linear-gradient(135deg, #10b981, #059669); }
-        .badge-kecantikan { background: linear-gradient(135deg, #f59e0b, #d97706); }
-        .badge-stamina { background: linear-gradient(135deg, #ef4444, #dc2626); }
-        .badge-pencernaan { background: linear-gradient(135deg, #8b5cf6, #7c3aed); }
-        .badge-detox { background: linear-gradient(135deg, #06b6d4, #0891b2); }
-        
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .jamu-grid {
-                grid-template-columns: 1fr;
-            }
-            .filter-buttons {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            .ingredient-list {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-        
-        @media (max-width: 640px) {
-            .ingredient-list {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-    </style> -->
 </head>
 <!-- Baru lagi -->
 <body class="bg-gradient-to-br from-green-50 via-yellow-50 to-orange-50 text-gray-800">
@@ -249,9 +101,9 @@
                         <div class="absolute inset-0 bg-gradient-to-br from-green-400 to-yellow-400 rounded-3xl transform rotate-6 opacity-20"></div>
                         <div class="relative bg-white rounded-3xl p-8 shadow-2xl hover-lift">
                             <div class="text-center mb-6">
-                                <div class="w-24 h-24 bg-gradient-to-br from-green-600 to-green-800 rounded-full mx-auto mb-4 flex items-center justify-center floating-animation">
-                                    <span class="text-4xl">🥤</span>
-                                </div>
+                               <div class="w-24 h-24 bg-gradient-to-br from-green-600 to-green-800 rounded-full mx-auto mb-4 flex items-center justify-center floating-animation">
+    <i class="fas fa-glass-whiskey text-white text-4xl"></i>
+</div>
                                 <h3 class="text-xl font-semibold text-green-800 mb-2">Jamu Pilihan</h3>
                                 <p class="text-green-600 text-sm">Ramuan terbaik untuk kesehatan keluarga</p>
                             </div>
@@ -2206,17 +2058,23 @@
             
             <div class="grid md:grid-cols-3 gap-8 mb-12">
                 <div class="bg-green-700/50 backdrop-blur-sm rounded-2xl p-6 hover-lift">
-                    <div class="text-4xl mb-4">🌱</div>
+                    <div class="text-4xl mb-4 text-white-600">
+    <i class="fas fa-seedling"></i>
+</div>
                     <h3 class="font-serif text-xl font-bold mb-3">100% Alami</h3>
                     <p class="text-green-100">Tanpa bahan kimia berbahaya</p>
                 </div>
                 <div class="bg-green-700/50 backdrop-blur-sm rounded-2xl p-6 hover-lift">
-                    <div class="text-4xl mb-4">🏛️</div>
+                    <div class="text-4xl mb-4 text-white-700">
+    <i class="fas fa-landmark"></i>
+</div>
                     <h3 class="font-serif text-xl font-bold mb-3">Teruji Turun Temurun</h3>
                     <p class="text-green-100">Resep warisan leluhur</p>
                 </div>
                 <div class="bg-green-700/50 backdrop-blur-sm rounded-2xl p-6 hover-lift">
-                    <div class="text-4xl mb-4">💚</div>
+                    <div class="text-4xl mb-4 text-white-500">
+    <i class="fas fa-heart"></i>
+</div>
                     <h3 class="font-serif text-xl font-bold mb-3">Ramah Lingkungan</h3>
                     <p class="text-green-100">Mendukung pertanian organik</p>
                 </div>

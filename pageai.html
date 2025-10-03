@@ -3,89 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Asisten AI Jamu - JamuSehat</title>
+    <title>Asisten AI MenJamu - MenJamu</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/aiAssistance.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap");
-
-      * {
-        font-family: "Poppins", sans-serif;
-      }
-
-      .font-serif {
-        font-family: "Merriweather", serif;
-      }
-
-      .glass-effect {
-        backdrop-filter: blur(10px);
-        background: rgba(255, 255, 255, 0.9);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-      }
-
-      .jamu-pattern {
-        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23059669' fill-opacity='0.05'%3E%3Cpath d='M30 30c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20zm15 0c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-      }
-
-      .fade-in {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.8s ease-out;
-      }
-
-      .fade-in.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      .slide-in-left {
-        animation: slideInLeft 1s ease-out;
-      }
-
-      @keyframes slideInLeft {
-        from {
-          opacity: 0;
-          transform: translateX(-50px);
-        }
-        to {
-          opacity: 1;
-          transform: translateX(0);
-        }
-      }
-
-      .hover-lift {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-
-      .hover-lift:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-      }
-
-      .typing-animation {
-        animation: blink 1s infinite;
-      }
-
-      @keyframes blink {
-        0%,
-        100% {
-          opacity: 1;
-        }
-        50% {
-          opacity: 0.5;
-        }
-      }
-
-      .gradient-bg {
-        background: linear-gradient(
-          135deg,
-          #065f46 0%,
-          #059669 35%,
-          #10b981 100%
-        );
-      }
-    </style> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <!-- Baruu -->
   <body class="bg-gradient-to-br from-green-50 via-yellow-50 to-orange-50">
@@ -97,12 +22,14 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center py-4">
           <div class="flex items-center space-x-2 slide-in-left">
-            <div
-              class="w-10 h-10 bg-gradient-to-br from-green-600 to-green-800 rounded-full flex items-center justify-center"
-            >
-              <span class="text-white font-bold text-lg">🌿</span>
+            <div class="flex items-center space-x-2">
+              <img
+                src="/assets/images/logo-menjamu.png"
+                alt="MenJamu Logo"
+                class="w-10 h-10 object-contain"
+              />
+              <span class="text-xl font-bold text-green-600">MenJamu</span>
             </div>
-            <span class="text-xl font-bold text-green-800">JamuSehat</span>
           </div>
 
           <div class="hidden md:flex space-x-8">
@@ -158,7 +85,7 @@
           <div
             class="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium mb-4"
           >
-            🤖 Powered by Groq AI - Llama 3.1
+            Powered by Groq AI - Llama 3.1
           </div>
           <h1
             class="font-serif text-4xl md:text-5xl font-bold text-green-800 mb-4"
@@ -183,7 +110,7 @@
                   <div
                     class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center"
                   >
-                    <span class="text-3xl">🤖</span>
+                    <i class="fas fa-brain text-3xl text-white"></i>
                   </div>
                   <div>
                     <h3 class="font-semibold text-xl">Asisten Jamu AI</h3>
@@ -215,8 +142,9 @@
                   placeholder="Contoh: Saya merasa pusing, mual, dan badan pegal-pegal sejak kemarin..."
                   class="w-full border-2 border-green-300 rounded-xl p-4 focus:ring-2 focus:ring-green-500 focus:border-green-500 focus:outline-none resize-none text-gray-700"
                 ></textarea>
-                <p class="text-sm text-gray-500 mt-2">
-                  💡 Tip: Jelaskan gejala dengan detail untuk rekomendasi yang
+                <p class="text-sm text-gray-500 mt-2 flex items-center">
+                  <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
+                  Tip: Jelaskan gejala dengan detail untuk rekomendasi yang
                   lebih akurat
                 </p>
               </div>
@@ -226,19 +154,6 @@
                 class="w-full bg-gradient-to-r from-green-600 to-green-700 text-white px-8 py-4 rounded-xl font-semibold hover:from-green-700 hover:to-green-800 transition-all transform hover:scale-105 flex items-center justify-center space-x-2"
               >
                 <span>Dapatkan Rekomendasi Jamu</span>
-                <svg
-                  class="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M13 10V3L4 14h7v7l9-11h-7z"
-                  ></path>
-                </svg>
               </button>
 
               <!-- Quick Symptom Buttons -->
@@ -249,39 +164,45 @@
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
                   <button
                     onclick="setQuickSymptom('Saya merasa pegal-pegal dan badan lelah')"
-                    class="text-sm bg-green-50 hover:bg-green-100 text-green-800 px-4 py-2 rounded-lg transition-colors border border-green-200"
+                    class="text-sm bg-green-50 hover:bg-green-100 text-green-800 px-4 py-2 rounded-lg transition-colors border border-green-200 flex items-center space-x-2"
                   >
-                    🦴 Pegal & Lelah
+                    <i class="fas fa-bone text-green-600"></i>
+                    <span>Pegal & Lelah</span>
                   </button>
                   <button
                     onclick="setQuickSymptom('Saya mengalami sakit kepala dan pusing')"
-                    class="text-sm bg-green-50 hover:bg-green-100 text-green-800 px-4 py-2 rounded-lg transition-colors border border-green-200"
+                    class="text-sm bg-green-50 hover:bg-green-100 text-green-800 px-4 py-2 rounded-lg transition-colors border border-green-200 flex items-center space-x-2"
                   >
-                    🤕 Sakit Kepala
+                    <i class="fas fa-head-side-virus text-green-600"></i>
+                    <span>Sakit Kepala</span>
                   </button>
                   <button
                     onclick="setQuickSymptom('Saya batuk dan tenggorokan tidak nyaman')"
-                    class="text-sm bg-green-50 hover:bg-green-100 text-green-800 px-4 py-2 rounded-lg transition-colors border border-green-200"
+                    class="text-sm bg-green-50 hover:bg-green-100 text-green-800 px-4 py-2 rounded-lg transition-colors border border-green-200 flex items-center space-x-2"
                   >
-                    😷 Batuk
+                    <i class="fas fa-lungs-virus text-green-600"></i>
+                    <span>Batuk</span>
                   </button>
                   <button
                     onclick="setQuickSymptom('Saya mengalami masalah pencernaan dan perut tidak nyaman')"
-                    class="text-sm bg-green-50 hover:bg-green-100 text-green-800 px-4 py-2 rounded-lg transition-colors border border-green-200"
+                    class="text-sm bg-green-50 hover:bg-green-100 text-green-800 px-4 py-2 rounded-lg transition-colors border border-green-200 flex items-center space-x-2"
                   >
-                    🥗 Pencernaan
+                    <i class="fas fa-apple-whole text-green-600"></i>
+                    <span>Pencernaan</span>
                   </button>
                   <button
                     onclick="setQuickSymptom('Saya ingin meningkatkan daya tahan tubuh')"
-                    class="text-sm bg-green-50 hover:bg-green-100 text-green-800 px-4 py-2 rounded-lg transition-colors border border-green-200"
+                    class="text-sm bg-green-50 hover:bg-green-100 text-green-800 px-4 py-2 rounded-lg transition-colors border border-green-200 flex items-center space-x-2"
                   >
-                    💪 Boost Imun
+                    <i class="fas fa-shield-virus text-green-600"></i>
+                    <span>Boost Imun</span>
                   </button>
                   <button
                     onclick="setQuickSymptom('Saya merasa lemas dan kurang bertenaga')"
-                    class="text-sm bg-green-50 hover:bg-green-100 text-green-800 px-4 py-2 rounded-lg transition-colors border border-green-200"
+                    class="text-sm bg-green-50 hover:bg-green-100 text-green-800 px-4 py-2 rounded-lg transition-colors border border-green-200 flex items-center space-x-2"
                   >
-                    ⚡ Stamina
+                    <i class="fas fa-battery-half text-green-600"></i>
+                    <span>Stamina</span>
                   </button>
                 </div>
               </div>
@@ -298,7 +219,9 @@
             <!-- Disclaimer -->
             <div class="p-6 bg-yellow-50 border-t border-yellow-200">
               <div class="flex items-start space-x-3">
-                <span class="text-2xl flex-shrink-0">⚠️</span>
+                <i
+                  class="fas fa-exclamation-triangle text-yellow-500 text-2xl flex-shrink-0 mt-1"
+                ></i>
                 <div>
                   <h4 class="font-bold text-yellow-800 mb-1 text-sm">
                     Penting untuk Diperhatikan
@@ -317,7 +240,9 @@
           <!-- Additional Info Cards -->
           <div class="grid md:grid-cols-3 gap-6 mt-8">
             <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift fade-in">
-              <div class="text-3xl mb-3">🌿</div>
+              <div class="text-3xl mb-3">
+                <i class="fas fa-leaf text-green-600"></i>
+              </div>
               <h3 class="font-semibold text-green-800 mb-2">
                 100% Tradisional
               </h3>
@@ -326,14 +251,18 @@
               </p>
             </div>
             <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift fade-in">
-              <div class="text-3xl mb-3">🤖</div>
+              <div class="text-3xl mb-3">
+                <i class="fas fa-robot text-blue-500"></i>
+              </div>
               <h3 class="font-semibold text-green-800 mb-2">AI Powered</h3>
               <p class="text-sm text-gray-600">
                 Menggunakan teknologi Groq AI Llama 3.1 untuk analisis cepat
               </p>
             </div>
             <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift fade-in">
-              <div class="text-3xl mb-3">📖</div>
+              <div class="text-3xl mb-3">
+                <i class="fas fa-book text-purple-600"></i>
+              </div>
               <h3 class="font-semibold text-green-800 mb-2">Cara Pembuatan</h3>
               <p class="text-sm text-gray-600">
                 Lengkap dengan instruksi pembuatan jamu yang mudah diikuti
