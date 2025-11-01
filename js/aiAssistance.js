@@ -42,7 +42,7 @@ async function getRekomendasi() {
         headers: {
           "Content-Type": "application/json",
           Authorization:
-            "Bearer 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",
+            "Bearer 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",
         },
         body: JSON.stringify({
           model: "llama-3.1-8b-instant",
